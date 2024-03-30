@@ -1,8 +1,9 @@
 #include "user.h"
+//TODO: Make sure everything works, fix queries,
 
 //Menus
 int usmodscr(sqlite3 *db){
-	//Opciones para modificar aspectos del usuario [nombre,email,contrasenya,saldo, y permisos de admin. local]
+	//Opciones para modificar aspectos del usuario [name,email,contrasenya,saldo, y permisos de admin. local]
 	int res = 0;
 	int flg = 0;
 	//Memoria dinamica:
@@ -39,7 +40,7 @@ int usmodscr(sqlite3 *db){
 	system("CLS");
 	printf("[MODIFICAR ATRIBUTO DE USUARIO]\n");
 	printf("[1] Contrasenya\n"); 
-	printf("[2] Nombre\n"); 
+	printf("[2] name\n"); 
 	printf("[3] Autorizacion\n");
 	printf("[4] Permiso de Administrador\n");
 	if(isAdmin(db, qEma) == 0)
@@ -71,23 +72,23 @@ int usmodscr(sqlite3 *db){
 				}
 				modificarContrasenya(db, qEma, qVar);
 				break;
-		case 2: //Mod. Nombre
+		case 2: //Mod. name
 				while(flg < 1){
 					fflush(stdin);
 					system("CLS");
-					printf("[Modificacion de Usuario]\n\nIntroduzca un nombre valido\n\n");
+					printf("[Modificacion de Usuario]\n\nIntroduzca un name valido\n\n");
 					fgets(qBuf,30,stdin);
 					sscanf(qBuf, "%s", qVar);
 					if(strlen(qVar) > 30){ 
 						fflush(stdin);
-						printf("Nombre Invalido;\nPor favor, introduzca un nombre valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+						printf("name Invalido;\nPor favor, introduzca un name valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
 						getch();
 					}else{
 						fflush(stdin);
 						flg++;
 					}
 				}
-				modificarNombre(db, qEma, qVar);
+				modificarname(db, qEma, qVar);
 				break;
 		case 3: //Mod. Aut
 				while(flg < 1){
@@ -156,7 +157,7 @@ int usrcrtscr(sqlite3 *db){
 	while(flg < 1){
 	fflush(stdin);
 	system("CLS");
-	printf("[Creacion de Usuario]\n\nIntroduzca un nombre de usuario valido\n\n");
+	printf("[Creacion de Usuario]\n\nIntroduzca un name de usuario valido\n\n");
 	fgets(qBuf,30,stdin);
 	sscanf(qBuf, "%s", qNom);
 	if(strlen(qNom) > 30){ 
@@ -283,60 +284,39 @@ int usrdltscr(sqlite3 *db){
 	return res;
 	}
 
-//TODO: Fix i
+//TODO: Make sure everything works, fix queries,
 
 //Funciones
 //Cambiar arrays directos a malloc.
-Usuario getUser(sqlite3 *db, char* email){ //MALLOC!
+Usuario getUser(sqlite3 *db, char* email){ //TODO: MALLOC!; fix query
 	sqlite3_stmt *stmt;
 	Usuario qUsua;
 	int result;
-	char* geno = "select nombre from Usuario where mail=?";
-	char* geco = "select pass from Usuario where mail=?";
-	char* geid = "select id from Usuario where mail=?";
-	char* gesa = "select auth from Usuario where mail=?";
-	char* gema = "select mail from Usuario where mail=?";
-	sqlite3_prepare_v2(db, gema, strlen(gema), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
+	//Query: select (name, pass, id, auth, mail) from User where mail=%s
+	char* query = malloc(sizeof(char)*1028);
+	sprintf(query, "select * from user where mail = %s", email);
+	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	result = sqlite3_step(stmt);
+	free(query);
 	if (result == SQLITE_ROW) { //Si existe el email en la BD:
-	strcpy(qUsua.mail, (char*) sqlite3_column_text(stmt, 0));
-	sqlite3_prepare_v2(db, geno, strlen(geno), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
-	result = sqlite3_step(stmt);
-	if (result == SQLITE_ROW) {
-			strcpy(qUsua.nombre, (char*) sqlite3_column_text(stmt, 0));
-		}
-	sqlite3_prepare_v2(db, geco, strlen(geco), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
-	result = sqlite3_step(stmt);
-	if (result == SQLITE_ROW) {
-			strcpy(qUsua.pass, (char*) sqlite3_column_text(stmt, 0));
-		}
-	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
-	result = sqlite3_step(stmt);
-	if (result == SQLITE_ROW) {
-			qUsua.id = sqlite3_column_int(stmt, 0);
-		}
-	sqlite3_prepare_v2(db, gesa, strlen(gesa), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
-	result = sqlite3_step(stmt);
-	if (result == SQLITE_ROW) {
-			qUsua.auth = sqlite3_column_int(stmt, 0);
-		}
-		}else{
-			system("CLS");
-			qUsua.id = 0;
-			printf("Usuario no existe.");
-			getch();
-		}
+		qUsua.id = sqlite3_column_int(stmt, 0);
+		strcpy(qUsua.name,sqlite3_column_text(stmt, 1));
+		strcpy(qUsua.mail,sqlite3_column_text(stmt, 2));
+		strcpy(qUsua.pass,sqlite3_column_text(stmt, 3));
+		qUsua.auth = sqlite3_column_int(stmt, 4);
+	}else{
+		system("CLS");
+		qUsua.id = 0;
+		printf("Usuario no existe.");
+		getch();
+	}
 	sqlite3_finalize(stmt);
+	free(query);
 	return qUsua;
 }
-Usuario creaUsuario(char nombre[30],char email[30],char pass[30],int auth){
+Usuario creaUsuario(char name[30],char email[30],char pass[30],int auth){
 	Usuario qUsua;
-	strcpy(qUsua.nombre, nombre);
+	strcpy(qUsua.name, name);
 	strcpy(qUsua.mail, email);
 	strcpy(qUsua.pass, pass);
 	qUsua.auth = auth;
@@ -346,7 +326,7 @@ void anyadirUsuario(sqlite3 *db,  Usuario usuario){ //BIEN
 	char* query = malloc(sizeof(char)*256);
 	sqlite3_stmt *stmt;
 	int result;
-	sprintf(query, "insert into usuario (id, nombre, mail, pass, auth) values (NULL,'%s','%s','%s',%d)", usuario.nombre, usuario.mail, usuario.pass, usuario.auth);
+	sprintf(query, "insert into User (id, name, mail, pass, auth) values (NULL,'%s','%s','%s',%d)", usuario.name, usuario.mail, usuario.pass, usuario.auth);
 	result = sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	if (result != SQLITE_OK) {
 		printf("Error preparing statement (INSERT)\n");
@@ -361,14 +341,13 @@ void anyadirUsuario(sqlite3 *db,  Usuario usuario){ //BIEN
 	free(query);
 	sqlite3_finalize(stmt);
 }
-void grantAdmin(sqlite3 *db, char* email){ //TODO: Change to fetch value from table; MALLOC!
+void grantAdmin(sqlite3 *db, char* email){ 
 	int id;
 	int result;
 	sqlite3_stmt *stmt;
-	char* geid = "select id from Usuario where mail=?";
-	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
-	result = sqlite3_step(stmt);
+	char* query = malloc(sizeof(char)*256); ;
+	sprintf(query, "select id from User where mail=%s", email);
+	result = sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	id = sqlite3_column_int(stmt, 0);
 	if(result == SQLITE_ROW){
 		FILE* f;
@@ -380,16 +359,15 @@ void grantAdmin(sqlite3 *db, char* email){ //TODO: Change to fetch value from ta
 	}
 	sqlite3_finalize(stmt);
 }
-int isAdmin(sqlite3 *db, char* email){ //TODO: Change to fetch value from table; MALLOC!
+int isAdmin(sqlite3 *db, char* email){ 
 	int id;
 	int result;
 	int ret = 0;
 	int qId;
 	sqlite3_stmt *stmt;
-	char* geid = "select perm from Usuario where mail=?";
-	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
-	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
-	result = sqlite3_step(stmt);
+	char* query = malloc(sizeof(char)*256); ;
+	sprintf(query, "select auth from User where mail=%s", email);
+	result = sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	id = sqlite3_column_int(stmt, 0);
 	sqlite3_finalize(stmt);
 	return ret;
@@ -398,7 +376,7 @@ int exists(sqlite3 *db, char* email){ //MALLOC!
 	int result;
 	int ret;
 	sqlite3_stmt *stmt;
-	char* geid = "select id from Usuario where mail=?";
+	char* geid = "select id from User where mail=?";
 	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
 	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
 	result = sqlite3_step(stmt);
@@ -415,7 +393,7 @@ int exists2(sqlite3 *db, int id){ //MALLOC!
 	int result;
 	int ret;
 	sqlite3_stmt *stmt;
-	char* geid = "select id from Usuario where id=?";
+	char* geid = "select id from User where id=?";
 	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
 	sqlite3_bind_int(stmt, 1, id);
 	result = sqlite3_step(stmt);
@@ -433,7 +411,7 @@ int passCheck(sqlite3 *db, char* email, char* contrasenya){ //MALLOC!
 	int ret;
 	char* qCon = malloc(sizeof(char)*30);
 	sqlite3_stmt *stmt;
-	char* geid = "select contrasenya from Usuario where mail=?";
+	char* geid = "select contrasenya from User where mail=?";
 	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
 	sqlite3_bind_text(stmt, 1, email, strlen(email), SQLITE_STATIC);
 	result = sqlite3_step(stmt);
@@ -476,9 +454,9 @@ void modificarContrasenya(sqlite3 *db, char* email, char* contrasenya){ //MALLOC
 	free(query);
 	sqlite3_finalize(stmt);
 }
-void modificarNombre(sqlite3 *db, char* email, char* nombre){ //BIEN
+void modificarname(sqlite3 *db, char* email, char* name){ //BIEN
 	char* query = malloc(sizeof(char)*256);
-	sprintf(query, "UPDATE usuario SET nombre = %s WHERE mail = %s",nombre,email);
+	sprintf(query, "UPDATE usuario SET name = %s WHERE mail = %s",name,email);
 	sqlite3_stmt *stmt;
 	int result;
 	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
@@ -489,7 +467,7 @@ void modificarNombre(sqlite3 *db, char* email, char* nombre){ //BIEN
 }
 void eliminarUsuario(sqlite3 *db, char* email){ //BIEN
 	char* query =  malloc(sizeof(char)*256);
-	sprintf(query, "delete from usuario where mail= %s",email);
+	sprintf(query, "delete from User where mail= %s",email);
 	int result;
 	sqlite3_stmt *stmt;
 	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
@@ -503,7 +481,7 @@ void visualizarUsuarios(sqlite3 *db){ //MALLOC!
 	int numR; //Numero de filas. Truco: SELECT Count(*) FROM tblName
 	int result;
 	char* query = malloc(sizeof(char)*128);
-	sprintf(query, "SELECT MAX(id) FROM usuario");
+	sprintf(query, "SELECT MAX(id) FROM User");
 	char* query2;
 	//atrib. usuario
 	char* qNom;
@@ -523,7 +501,7 @@ void visualizarUsuarios(sqlite3 *db){ //MALLOC!
 		qNom = malloc(sizeof(char)*30);
 		qCon = malloc(sizeof(char)*30);
 		query2 = malloc(sizeof(char)*128);
-		sprintf(query2, "SELECT * FROM usuario where id = %d", i);
+		sprintf(query2, "SELECT * FROM User where id = %d", i);
 		sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);
 		result = sqlite3_step(stmt);
 		if(result == SQLITE_ROW){
@@ -533,7 +511,7 @@ void visualizarUsuarios(sqlite3 *db){ //MALLOC!
 			strcpy(qEma,sqlite3_column_text(stmt, 2));
 			strcpy(qCon,sqlite3_column_text(stmt, 3));
 			qAut = sqlite3_column_int(stmt, 4);
-			printf("[ID] %d [Nombre] %s [E-Mail] %s [Contrasenya] %s [Saldo] %d \n", qId, qNom, qEma, qCon, qAut);
+			printf("[ID] %d [name] %s [E-Mail] %s [Contrasenya] %s [Saldo] %d \n", qId, qNom, qEma, qCon, qAut);
 		}
 		free(qEma);
 		free(qNom);
@@ -551,7 +529,7 @@ void imprimirUsuarios(sqlite3 *db){
 	f = fopen("usuarios.tbl", "w");
 	int result;
 	char* query =  malloc(sizeof(char)*128);
-	sprintf(query, "SELECT MAX(id) FROM usuario");
+	sprintf(query, "SELECT MAX(id) FROM User");
 	char* query2;
 	//atrib. usuario
 	char* qNom;
@@ -567,14 +545,14 @@ void imprimirUsuarios(sqlite3 *db){
 		qEma = malloc(sizeof(char)*30);
 		qNom = malloc(sizeof(char)*30);
 		query2 = malloc(sizeof(char)*128);
-		sprintf(query2, "SELECT * FROM usuario where id = %d", i);
+		sprintf(query2, "SELECT * FROM User where id = %d", i);
 		sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);
 		result = sqlite3_step(stmt);
 		if(result == SQLITE_ROW){
 			logAppendDB(db, query2, SQLITE_DONE);
 			strcpy(qNom,sqlite3_column_text(stmt, 1));
 			strcpy(qEma,sqlite3_column_text(stmt, 2));
-			fprintf(f, "[Nombre] %s [E-Mail] %s [Saldo] %d \n", qNom, qEma);
+			fprintf(f, "[name] %s [E-Mail] %s [Saldo] %d \n", qNom, qEma);
 		}
 		free(qEma);
 		free(qNom);

@@ -12,7 +12,7 @@
 //	4) Escribir que dato, quien, y cuando.
 void logOpen(sqlite3 *db);
 void logStart(sqlite3 *db, char* user);
-void logAppendDB(sqlite3 *db, char* statement, int result); //Pone en fichero exactamente cada movimiento hecho a B.D.
+void logAppend(sqlite3 *db, char* statement, int result); //Pone en fichero exactamente cada movimiento hecho a B.D.
 void logEnd(sqlite3 *db, char* user);
 void logExit(sqlite3 *db);
 
