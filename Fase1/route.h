@@ -9,7 +9,10 @@
 
 typedef struct{
 	int id;
-	char name[30];
+	int pathid;
+    int currentstopid; //Parada actual
+    int nextstopid; //Siguiente Parada
+    int ordernumber; //Numero de orden (si es la primera, o la segunda. Esta la hago yo)
 }Route; //X Bytes, malloc necesario para arrays
 
 Route getRoute(sqlite3 *db, int id);

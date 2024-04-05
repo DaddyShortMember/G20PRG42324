@@ -9,7 +9,8 @@
 
 typedef struct{
 	int id;
-	char name[30];
+    int initialstop;
+    int finalstop;
 }Path; //X Bytes, malloc necesario para arrays
 
 Path getPath(sqlite3 *db, int id);

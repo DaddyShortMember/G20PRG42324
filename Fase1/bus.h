@@ -9,11 +9,12 @@
 
 typedef struct{
 	int id;
-	char name[30];
+	char license[10];
+    int seats;
 }Bus; //X Bytes, malloc necesario para arrays
 
 Bus getBus(sqlite3 *db, int id);
-Bus creaBus(int id, char* name);
+Bus creaBus(int id, char* license, int seats);
 void anyadirBus(sqlite3 *db, Bus bus);
 
 #endif

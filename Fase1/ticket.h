@@ -9,11 +9,15 @@
 
 typedef struct{
 	int id;
-	char name[30];
+    int usid;
+    int tripid;
+	char date[30];
 }Ticket; //X Bytes, malloc necesario para arrays
 
+//Esta la dejamos para la siguiente, al no ser importante para la primera entrega (servidor local; esta ya es para el programa tal cual)
+
 Ticket getTicket(sqlite3 *db, int id);
-Ticket creaTicket(int id, char* name);
+Ticket creaTicket(int id, int usid, int tripid, char* date);
 void anyadirTicket(sqlite3 *db, Ticket Ticket);
 
 #endif
