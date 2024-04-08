@@ -17,8 +17,9 @@ typedef struct{
 }Trip; //X Bytes, malloc necesario para arrays
 
 Trip getTrip(sqlite3 *db, int id);
-Trip creaTrip(int id, int busid, int pathid, char etime[8], char atime[8], int price);
+Trip creaTrip(int busid, int pathid, char etime[8], char atime[8], int price);
 void anyadirTrip(sqlite3 *db, Trip Trip);
+void eliminarTrip(sqlite3 *db, int id);
 
 //Menus
 int trpcrtrscr(sqlite3 *db);

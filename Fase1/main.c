@@ -8,6 +8,7 @@
 //#include "stop.h"
 //#include "bus.h"
 //#include "sqlite3.h"
+#include "trip.h"
 #include "logger.h"
 
 int lgscr(sqlite3* db); //menu de inicio de sesion
@@ -213,7 +214,11 @@ int menuEm(void){
 				ret = usi;
 				flg++;
 				break;
-		case 1:
+		case 1:	fflush(stdin);
+				system("CLS");
+				ret = usi;
+				flg++;
+				break;
 		case 2: fflush(stdin);
 				system("CLS");
 				ret = usi;
@@ -279,9 +284,105 @@ int usrscr(sqlite3* db){
 	return ret;
 }
 
-int tripscr(sqlite3* db){}//menu de visualizacion/modificacion sobre: viajes (rutas)
-int busscr(sqlite3* db){}//menu de visualizacion/modificacion sobre: buses
+int tripscr(sqlite3* db){
+	int ret;
+	int flg = 0;
+	int flg2 = 1;
+	char buffer[3];
+	int usi;
+	while(flg == 0){
+		fflush(stdin);
+		system("CLS");
+		flg2 = 1;
+		printf("Cliente de Admin. Local\n");
+		printf("[MENU VIAJES]\n");
+		printf("[1] Visualizar Viajes\n");
+		printf("[2] Imprimir Viajes\n");
+		printf("[3] Anyadir Viajes\n");
+		printf("[4] Eliminar Viajes\n");
+		printf("[5] Visualizar Buses\n");
+		printf("[6] Imprimir Buses\n");
+		printf("[7] Anyadir Buses\n");
+		printf("[8] Eliminar Buses\n");
+		printf("[0] Vuelta\n");
+		printf("Introduzca su seleccion:\n");
+		fgets(buffer,3,stdin);
+		sscanf(buffer, "%d", &usi);
+		switch(usi){
+			case 0:	fflush(stdin);
+					system("CLS");
+					ret = usi;
+					flg++;
+					break;
+			case 1: visualizarTrip(db);
+					break;
+			case 2: imprimirTrip(db);
+					break;
+			case 3: while(flg2 == 1){
+					flg2 = trpcrtrscr(db);
+					}
+					break;
+			case 4: while(flg2 == 1){
+						flg2 = trpdltscr(db);
+					}
+					break;
+			default: system("CLS");
+					printf("Opcion Invalida;\nPor favor, introduzca un numero que aparezca en el menu\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+					getch();
+		}
+	}
+	return ret;
+}//menu de visualizacion/modificacion sobre: viajes (rutas)
 
-int routescr(sqlite3* db){}//menu de visualizacion/modificacion sobre: rutas
-int pathscr(sqlite3* db){}//menu de visualizacion/modificacion sobre: caminos
-int stopscr(sqlite3* db){}//menu de visualizacion/modificacion sobre: paradas
+int routescr(sqlite3* db){
+	/*
+	int ret;
+	int flg = 0;
+	int flg2 = 1;
+	char buffer[3];
+	int usi;
+	while(flg == 0){
+		fflush(stdin);
+		system("CLS");
+		flg2 = 1;
+		printf("Cliente de Admin. Local\n");
+		printf("[MENU RUTAS]\n");
+		printf("[1] Visualizar Rutas\n");
+		printf("[2] Imprimir Rutas\n");
+		printf("[3] Anyadir Rutas\n");
+		printf("[4] Visualizar Paradas\n");
+		printf("[5] Imprimir Paradas\n");
+		printf("[6] Anyadir Paradas\n");
+		printf("[7] Visualizar Caminos\n");
+		printf("[8] Imprimir Caminos\n");
+		printf("[9] Anyadir Caminos\n");
+		printf("[0] Vuelta\n");
+		printf("Introduzca su seleccion:\n");
+		fgets(buffer,3,stdin);
+		sscanf(buffer, "%d", &usi);
+		switch(usi){
+			case 0:	fflush(stdin);
+					system("CLS");
+					ret = usi;
+					flg++;
+					break;
+			case 1: visualizarTrip(db);
+					break;
+			case 2: imprimirTrip(db);
+					break;
+			case 3: while(flg2 == 1){
+					flg2 = trpcrtrscr(db);
+					}
+					break;
+			case 4: while(flg2 == 1){
+					flg2 = trpdltscr(db);
+					}
+					break;
+			default: system("CLS");
+					printf("Opcion Invalida;\nPor favor, introduzca un numero que aparezca en el menu\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+					getch();
+		}
+	}
+	return ret;
+*/
+}//menu de visualizacion/modificacion sobre: rutas

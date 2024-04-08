@@ -5,33 +5,31 @@ Trip getTrip(sqlite3 *db, int id){
     sqlite3_stmt *stmt;
 	Trip qTrip;
 	int result;
-	//Query: select (name, pass, id, auth, mail) from User where mail=%s
 	char* query = malloc(sizeof(char)*1028);
 	sprintf(query, "select * from trip where id = %d", id);
 	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	result = sqlite3_step(stmt);
 	free(query);
 	if (result == SQLITE_ROW) {
-		qTrip.id = id;
-	    qTrip.busid = busid;
-	    qTrip.pathid = pathid;
-	    strcpy(qTrip.etime, etime);
-	    strcpy(qTrip.atime, atime);
-	    qTrip.price = price;
+		qTrip.id = sqlite3_column_int(stmt, 0);
+		qTrip.busid = sqlite3_column_int(stmt, 1);
+		qTrip.pathid = sqlite3_column_int(stmt, 2);
+        strcpy(qTrip.etime,sqlite3_column_text(stmt, 3));
+        strcpy(qTrip.atime,sqlite3_column_text(stmt, 4));
+        qTrip.price = sqlite3_column_int(stmt, 5);
 	}else{
 		system("CLS");
-		qUsua.id = 0;
-		printf("Usuario no existe.");
+		qTrip.id = 0;
+		printf("Viaje no existe.");
 		getch();
 	}
 	sqlite3_finalize(stmt);
 	free(query);
-	return qUsua;
+	return qTrip;
 
 }
-Trip creaTrip(int id, int busid, int pathid, char etime[5], char atime[5], int price){
+Trip creaTrip( int busid, int pathid, char etime[5], char atime[5], int price){
     Trip qTrip;
-    qTrip.id = id;
 	qTrip.busid = busid;
 	qTrip.pathid = pathid;
 	strcpy(qTrip.etime, etime);
@@ -51,11 +49,22 @@ void anyadirTrip(sqlite3 *db, Trip trip){
 	}
 	result = sqlite3_step(stmt);
 	if (result != SQLITE_DONE) {
-		printf("Error al introducir usuario\n");
+		printf("Error al introducir viaje\n");
 	}else{
-		printf("Usuario %s introducido\n", usuario.mail);
+		printf("Viaje introducido\n");
 	}
 	logAppendDB(db, query, result);
+	free(query);
+	sqlite3_finalize(stmt);
+}
+
+void eliminarTrip(sqlite3 *db, int id){
+	char* query =  malloc(sizeof(char)*256);
+	sprintf(query, "delete from Trip where id= %d",id);
+	int result;
+	sqlite3_stmt *stmt;
+	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
+	result = sqlite3_step(stmt);
 	free(query);
 	sqlite3_finalize(stmt);
 }
@@ -71,7 +80,7 @@ int trpcrtrscr(sqlite3 *db){
 	int qBusid;
 	int qPathid;
 	int res = 0;
-	Usuario qUsua;
+	Trip qTrip;
 	int flg0 = 0;
 	int flg1 = 0;
 	while(flg0 < 1){
@@ -158,8 +167,8 @@ int trpcrtrscr(sqlite3 *db){
 	}
 	}
     flg0--;
-	qTrip = creaTrip(qNom,qEma,qCon,qAut);
-	anyadirTrip(db,qUsua);
+	qTrip = creaTrip(qBusid,qPathid,qHs,qHl,qPrice);
+	anyadirTrip(db,qTrip);
 	printf("[Creacion de Viaje]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
 	getch();
 	while(flg0 == 0){
@@ -170,7 +179,7 @@ int trpcrtrscr(sqlite3 *db){
 		if(res == 1 || res == 0)
 			flg0++;
 		else{
-			printf("[Creacion de Viaje]\n\nInput Erroneo. Presione cualquier tecla para volver a intentar.\n");
+			printf("[Creacion de Viaje]\n\nInput Erroneo.\nPresione cualquier tecla para volver a intentar.\n");
 			getch();
 		}
 	}
@@ -184,6 +193,7 @@ int trpcrtrscr(sqlite3 *db){
 int trpdltscr(sqlite3 *db){
     int res = 0;
 	int flg = 0;
+    int qId;
 	char* buffer = malloc(sizeof(char)*2);
 	char* qBuf = malloc(sizeof(char)*10);
 	while(flg < 1){
@@ -191,16 +201,16 @@ int trpdltscr(sqlite3 *db){
 		system("CLS");
 		printf("[Eliminacion de Viaje]\n\nIntroduzca un numero de viaje valido\n\n");
 		fgets(qBuf,10,stdin);
-		sscanf(qBuf, "%s", qEma);
-		if(strlen(qEma) > 30 || exists(db, qEma) == 0){
+		sscanf(qBuf, "%d", &qId);
+		if(qId < 1){
 			fflush(stdin);
-			printf("Email Invalido o no existente;\nPor favor, introduzca un email valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+			printf("Numero Invalido o no existente;\nPor favor, introduzca un numero valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
 			getch();
 		}
 		else{
 		fflush(stdin);
 		flg++;
-		eliminarTrip(db, qEma);
+		eliminarTrip(db, qId);
 		}
 	}
 	flg--;
@@ -228,7 +238,7 @@ void visualizarTrip(sqlite3 *db){
 	char* query = malloc(sizeof(char)*128);
 	sprintf(query, "SELECT MAX(id) FROM trip");
 	char* query2;
-	//atrib. usuario
+	//atrib. viaje
 	char* qHs;
 	char* qHl;
 	int qBus;
@@ -277,8 +287,12 @@ void imprimirTrip(sqlite3 *db){
 	sprintf(query, "SELECT MAX(id) FROM trip");
 	char* query2;
 	//atrib. usuario
-	char* qHl;
 	char* qHs;
+	char* qHl;
+	int qBus;
+    int qPath;
+	int qId;
+	int qPrice;
 	sqlite3_stmt *stmt;
 	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	result = sqlite3_step(stmt);
