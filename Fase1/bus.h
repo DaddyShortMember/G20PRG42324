@@ -14,8 +14,13 @@ typedef struct{
 }Bus; //X Bytes, malloc necesario para arrays
 
 Bus getBus(sqlite3 *db, int id);
-Bus creaBus(int id, char* license, int seats);
+Bus creaBus(char* license, int seats);
 void anyadirBus(sqlite3 *db, Bus bus);
+void eliminarBus(sqlite3 *db, int id);
+
+//Menus
+int buscrtrscr(sqlite3 *db);
+int busdltscr(sqlite3 *db);
 
 void visualizarBuses(sqlite3 *db);
 void imprimirBuses(sqlite3 *db);

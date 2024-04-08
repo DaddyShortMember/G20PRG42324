@@ -26,8 +26,8 @@ Trip getTrip(sqlite3 *db, int id){
 	sqlite3_finalize(stmt);
 	free(query);
 	return qTrip;
-
 }
+
 Trip creaTrip( int busid, int pathid, char etime[5], char atime[5], int price){
     Trip qTrip;
 	qTrip.busid = busid;
@@ -253,8 +253,8 @@ void visualizarTrip(sqlite3 *db){
 	system("CLS");
 	printf("[LISTA DE VIAJES]\n\n");
 	for(int i = 0; i <= numR; i++){
-		qHs = malloc(sizeof(char)*5);
-		qHl = malloc(sizeof(char)*5);
+		qHs = malloc(sizeof(char)*8);
+		qHl = malloc(sizeof(char)*8);
 		query2 = malloc(sizeof(char)*128);
 		sprintf(query2, "SELECT * FROM trip where id = %d", i);
 		sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);
@@ -301,8 +301,8 @@ void imprimirTrip(sqlite3 *db){
 	system("CLS");
 	printf("[IMPRIMIENDO VIAJES]\n\n");
 	for(int i = numR; i > 0; i--){
-		qHs = malloc(sizeof(char)*5);
-		qHl = malloc(sizeof(char)*5);
+		qHs = malloc(sizeof(char)*8);
+		qHl = malloc(sizeof(char)*8);
 		query2 = malloc(sizeof(char)*128);
 		sprintf(query2, "SELECT * FROM trip where id = %d", i);
 		sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);

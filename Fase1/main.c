@@ -129,7 +129,6 @@ int lgscr(sqlite3* db){
 	printf("Introduzca su contrasenya:\n");
 	fgets(buf,31,stdin);
 	sscanf(buf, "%s", usi);
-	printf("\nDEBUG: %s", usi);
 	if(passCheck(db,mail,usi) == 0){
 		if(sec == 2){
 			system("CLS");
@@ -324,6 +323,18 @@ int tripscr(sqlite3* db){
 					break;
 			case 4: while(flg2 == 1){
 						flg2 = trpdltscr(db);
+					}
+					break;
+			case 5: visualizarBuses(db);
+					break;
+			case 6: imprimirBuses(db);
+					break;
+			case 7: while(flg2 == 1){
+					flg2 = buscrtrscr(db);
+					}
+					break;
+			case 8: while(flg2 == 1){
+						flg2 = busdltscr(db);
 					}
 					break;
 			default: system("CLS");

@@ -385,12 +385,10 @@ int passCheck(sqlite3 *db, char* email, char* contrasenya){
 	sqlite3_stmt *stmt;
 	char* geid = malloc(sizeof(char)*128);
 	sprintf(geid, "select pass from User where mail = '%s'", email);
-	printf("\nDEBUG: %s", geid);
 	sqlite3_prepare_v2(db, geid, strlen(geid), &stmt, NULL);
 	result = sqlite3_step(stmt);
 	if(result == SQLITE_ROW){
 		  strcpy(qCon,sqlite3_column_text(stmt, 0));
-		  printf("\nDEBUG: %s", qCon);
 		if(strcmp(qCon,contrasenya) == 0)
 			ret = 1;
 		else
