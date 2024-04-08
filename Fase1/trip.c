@@ -28,7 +28,7 @@ Trip getTrip(sqlite3 *db, int id){
 	return qTrip;
 }
 
-Trip creaTrip( int busid, int pathid, char etime[5], char atime[5], int price){
+Trip creaTrip( int busid, int pathid, char* etime, char* atime, int price){
     Trip qTrip;
 	qTrip.busid = busid;
 	qTrip.pathid = pathid;
@@ -49,7 +49,7 @@ void anyadirTrip(sqlite3 *db, Trip trip){
 	}
 	result = sqlite3_step(stmt);
 	if (result != SQLITE_DONE) {
-		printf("Error al introducir viaje\n");
+		printf("Error al introducir viaje (Posiblemente por no seguir el formato de hora indicado.)\n");
 	}else{
 		printf("Viaje introducido\n");
 	}
@@ -121,9 +121,9 @@ int trpcrtrscr(sqlite3 *db){
 	fflush(stdin);
 	system("CLS");
 	printf("[Creacion de Viaje]\n\nIntroduzca una hora de salida valida\n\n");
-	fgets(qBuf,10,stdin);
-	sscanf(qBuf, "%s", qHs);
-	if(strlen(qHs) > 8){ 
+	fgets(qBuf,9,stdin);
+	sscanf(qBuf, "%s",qHs);
+	if(strlen(qHs) != 8){ 
 		fflush(stdin);
 		printf("Hora Invalida;\nPor favor, introduzca una hora [HH:MM:SS] valida\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
 		getch();
@@ -137,9 +137,9 @@ int trpcrtrscr(sqlite3 *db){
 	fflush(stdin);
 	system("CLS");
 	printf("[Creacion de Viaje]\n\nIntroduzca una hora de llegada valida\n\n");
-	fgets(qBuf,10,stdin);
+	fgets(qBuf,9,stdin);
 	sscanf(qBuf, "%s", qHl);
-	if(strlen(qHl) > 8){ 
+	if(strlen(qHl) != 8){ 
 		fflush(stdin);
 		printf("Hora Invalida;\nPor favor, introduzca una hora [HH:MM:SS] valida\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
 		getch();
@@ -234,6 +234,7 @@ int trpdltscr(sqlite3 *db){
 //Funciones Visuales
 void visualizarTrip(sqlite3 *db){
 	int numR; //Numero de filas. Truco: SELECT Count(*) FROM tblName
+	//Aveces hace crash despues de crear un viaje. Es raro.
 	int result;
 	char* query = malloc(sizeof(char)*128);
 	sprintf(query, "SELECT MAX(id) FROM trip");

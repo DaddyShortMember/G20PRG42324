@@ -11,13 +11,13 @@ typedef struct{
 	int id;
     int busid;
     int pathid;
-    char etime[8];
-    char atime[8];
+    char etime[9];
+    char atime[9];
 	int price;
 }Trip; //X Bytes, malloc necesario para arrays
 
 Trip getTrip(sqlite3 *db, int id);
-Trip creaTrip(int busid, int pathid, char etime[8], char atime[8], int price);
+Trip creaTrip(int busid, int pathid, char* etime, char* atime, int price);
 void anyadirTrip(sqlite3 *db, Trip Trip);
 void eliminarTrip(sqlite3 *db, int id);
 
