@@ -30,9 +30,8 @@ Route getRoute(sqlite3 *db, int id){
     return qRoute;
 }
 
-Route creaRoute(int id, int pathid, int currentstopid, int nextstopid, int ordernumber) {
+Route creaRoute(int pathid, int currentstopid, int nextstopid, int ordernumber) {
     Route route;
-    route.id = id;
     route.pathid = pathid;
     route.currentstopid = currentstopid;
     route.nextstopid = nextstopid;
@@ -44,7 +43,7 @@ void anyadirRoute(sqlite3 *db, Route Route){
     char* query = malloc(sizeof(char)*256);
     sqlite3_stmt *stmt;
     int result;
-    sprintf(query, "INSERT INTO route (id, pathid, currentstopid, nextstopid, ordernumber) VALUES (%d, %d, %d, %d, %d)", Route.id, Route.pathid, Route.currentstopid, Route.nextstopid, Route.ordernumber);
+    sprintf(query, "INSERT INTO route (id, pthid, csid, nsid, ordnum) VALUES (NULL, %d, %d, %d, %d)",  Route.pathid, Route.currentstopid, Route.nextstopid, Route.ordernumber);
     result = sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
     if (result != SQLITE_OK) {
         printf("Error al preparar el query (INSERT)\n");
@@ -55,6 +54,7 @@ void anyadirRoute(sqlite3 *db, Route Route){
     } else {
         printf("Ruta añadida correctamente\n");
     }
+    logAppendDB(db, query, result);
     free(query);
     sqlite3_finalize(stmt);
 }
@@ -138,7 +138,7 @@ int rtcrtrscr(sqlite3 *db) {
     }
     flg1--;
 
-    Route qRoute = creaRoute(0, qPathid, qCurrentStopId, qNextStopId, qOrderNumber);
+    Route qRoute = creaRoute(qPathid, qCurrentStopId, qNextStopId, qOrderNumber);
     anyadirRoute(db, qRoute);
     printf("[Creacion de Ruta]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
     getch();
