@@ -145,7 +145,7 @@ int usrcrtscr(sqlite3 *db){
 	while(flg < 1){
 	fflush(stdin);
 	system("CLS");
-	printf("[Creacion de Usuario]\n\nIntroduzca un name de usuario valido\n\n");
+	printf("[Creacion de Usuario]\n\nIntroduzca un nombre de usuario valido\n\n");
 	fgets(qBuf,30,stdin);
 	sscanf(qBuf, "%s", qNom);
 	if(strlen(qNom) > 30){ 
@@ -477,7 +477,7 @@ void visualizarUsuarios(sqlite3 *db){ //MALLOC!
 			strcpy(qEma,sqlite3_column_text(stmt, 2));
 			strcpy(qCon,sqlite3_column_text(stmt, 3));
 			qAut = sqlite3_column_int(stmt, 4);
-			printf("[ID] %d [name] %s [E-Mail] %s [Contrasenya] %s [Autoridad] %d \n", qId, qNom, qEma, qCon, qAut);
+			printf("[ID] %d [Nombre] %s [E-Mail] %s [Contrasenya] %s [Autoridad] %d \n", qId, qNom, qEma, qCon, qAut);
 		}
 		free(qEma);
 		free(qNom);
@@ -518,7 +518,7 @@ void imprimirUsuarios(sqlite3 *db){
 			logAppendDB(db, query2, SQLITE_DONE);
 			strcpy(qNom,sqlite3_column_text(stmt, 1));
 			strcpy(qEma,sqlite3_column_text(stmt, 2));
-			fprintf(f, "[name] %s [E-Mail] %s \n", qNom, qEma);
+			fprintf(f, "[Nombre] %s [E-Mail] %s \n", qNom, qEma);
 		}
 		free(qEma);
 		free(qNom);
