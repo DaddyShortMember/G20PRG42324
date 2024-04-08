@@ -4,7 +4,7 @@
 #include <string.h>
 #include "user.h"
 //#include "path.h"
-#include "route.h"
+//#include "route.h"
 //#include "stop.h"
 //#include "bus.h"
 //#include "sqlite3.h"
@@ -346,52 +346,6 @@ int tripscr(sqlite3* db){
 }//menu de visualizacion/modificacion sobre: viajes (rutas)
 
 int routescr(sqlite3* db){
-    int ret;
-    int flg = 0;
-    int flg2 = 1;
-    char buffer[3];
-    int usi;
-    while(flg == 0){
-        fflush(stdin);
-        system("CLS");
-        flg2 = 1;
-        printf("Cliente de Admin. Local\n");
-        printf("[MENU RUTAS]\n");
-        printf("[1] Visualizar Rutas\n");
-        printf("[2] Imprimir Rutas\n");
-        printf("[3] Añadir Ruta\n");
-        printf("[0] Vuelta\n");
-        printf("Introduzca su seleccion:\n");
-        fgets(buffer,3,stdin);
-        sscanf(buffer, "%d", &usi);
-        switch(usi){
-            case 0:
-                fflush(stdin);
-                system("CLS");
-                ret = usi;
-                flg++;
-                break;
-            case 1:
-                visualizarRutas(db);
-                break;
-            case 2:
-                imprimirRutas(db);
-                break;
-            case 3:
-                while(flg2 == 1){
-                    flg2 = rtcrtrscr(db); // Función para añadir una nueva ruta
-                }
-                break;
-            default:
-                system("CLS");
-                printf("Opcion Invalida;\nPor favor, introduzca un numero que aparezca en el menu\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
-                getch();
-        }
-    }
-    return ret;
-}
-
-/*int routescr(sqlite3* db){
 	int ret;
 	int flg = 0;
 	int flg2 = 1;
@@ -417,21 +371,29 @@ int routescr(sqlite3* db){
 		fgets(buffer,3,stdin);
 		sscanf(buffer, "%d", &usi);
 		switch(usi){
-			case 0:	fflush(stdin);
-					system("CLS");
-					ret = usi;
-					flg++;
+			case 0:
+                fflush(stdin);
+                system("CLS");
+                ret = usi;
+                flg++;
+                break;
+            case 1:
+                visualizarRutas(db);
+                break;
+            case 2:
+                imprimirRutas(db);
+                break;
+            case 3:
+                while(flg2 == 1){
+                    flg2 = rtcrtrscr(db); // Función para añadir una nueva ruta
+                }
+                break;
+			case 4: visualizarParadas(db);
 					break;
-			case 1: visualizarTrip(db);
+			case 5: imprimirParadas(db);
 					break;
-			case 2: imprimirTrip(db);
-					break;
-			case 3: while(flg2 == 1){
-					flg2 = trpcrtrscr(db);
-					}
-					break;
-			case 4: while(flg2 == 1){
-					flg2 = trpdltscr(db);
+			case 6: while(flg2 == 1){
+					flg2 = stopcrtrscr(db);
 					}
 					break;
 			default: system("CLS");
@@ -440,5 +402,4 @@ int routescr(sqlite3* db){
 		}
 	}
 	return ret;
-}*/
-//menu de visualizacion/modificacion sobre: rutas
+}//menu de visualizacion/modificacion sobre: rutas
