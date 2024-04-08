@@ -19,5 +19,6 @@ void anyadirPath(sqlite3 *db, Path Path);
 
 void visualizarCaminos(sqlite3 *db);
 void imprimirCaminos(sqlite3 *db);
+int pathcrtrscr(sqlite3 *db);
 
 #endif
