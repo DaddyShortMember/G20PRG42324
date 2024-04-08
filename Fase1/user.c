@@ -39,9 +39,8 @@ int usmodscr(sqlite3 *db){
 	system("CLS");
 	printf("[MODIFICAR ATRIBUTO DE USUARIO]\n");
 	printf("[1] Contrasenya\n"); 
-	printf("[2] name\n"); 
+	printf("[2] Nombre\n"); 
 	printf("[3] Autorizacion\n");
-	printf("[4] Permiso de Administrador\n");
 	printf("[0] Volver\n");
 	printf("Introduzca su seleccion:\n");
 	fgets(buffer,3,stdin);
@@ -71,12 +70,12 @@ int usmodscr(sqlite3 *db){
 				while(flg < 1){
 					fflush(stdin);
 					system("CLS");
-					printf("[Modificacion de Usuario]\n\nIntroduzca un name valido\n\n");
+					printf("[Modificacion de Usuario]\n\nIntroduzca un nombre valido\n\n");
 					fgets(qBuf,30,stdin);
-					sscanf(qBuf, "%s", qAut);
-					if(qAut > 3 ){ 
+					sscanf(qBuf, "%s", qVar);
+					if(strlen(qVar) > 30){ 
 						fflush(stdin);
-						printf("name Invalido;\nPor favor, introduzca un name valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+						printf("Nombre Invalido;\nPor favor, introduzca un nombre valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
 						getch();
 					}else{
 						fflush(stdin);
@@ -91,7 +90,7 @@ int usmodscr(sqlite3 *db){
 					system("CLS");
 					printf("[Modificacion de Usuario]\n\nIntroduzca un nivel valido\n[1] ADMIN\n[2] EMPRESA\n[3] USUARIO NORMAL\n\n");
 					fgets(qBuf,2,stdin);
-					sscanf(qBuf, "%d", qAut);
+					sscanf(qBuf, "%d", &qAut);
 					if(qAut < 0 || qAut > 3){ 
 						fflush(stdin);
 						printf("Nivel Invalido;\nPor favor, introduzca un nivel valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
@@ -310,15 +309,14 @@ Usuario creaUsuario(char name[30],char email[30],char pass[30],int auth){
 	qUsua.auth = auth;
 	return qUsua;
 }
-void anyadirUsuario(sqlite3 *db,  Usuario usuario){ //BIEN
+void anyadirUsuario(sqlite3 *db,  Usuario usuario){ //Funciona, pero da error por alguna razon
 	char* query = malloc(sizeof(char)*256);
 	sqlite3_stmt *stmt;
 	int result;
 	sprintf(query, "insert into User (id, name, mail, pass, auth) values (NULL,'%s','%s','%s',%d)", usuario.name, usuario.mail, usuario.pass, usuario.auth);
-	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
-	result = sqlite3_step(stmt);
+	result = sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 	if (result != SQLITE_OK) {
-		printf("Error preparing statement (INSERT)\n");
+		printf("Error al preparar el query (INSERT)\n");
 	}
 	result = sqlite3_step(stmt);
 	if (result != SQLITE_DONE) {
@@ -343,7 +341,7 @@ void modificarAut(sqlite3 *db, char* email, int aut){
 		if(result == SQLITE_ROW){
 			free(query);
 			query = malloc(sizeof(char)*256);
-			sprintf(query, "UPDATE usuario SET auth = %d WHERE id = %d", aut, id);
+			sprintf(query, "UPDATE user SET auth = %d WHERE id = %d", aut, id);
 			sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
 			result = sqlite3_step(stmt);
 		}else{
@@ -407,8 +405,7 @@ int passCheck(sqlite3 *db, char* email, char* contrasenya){
 }
 void modificarContrasenya(sqlite3 *db, char* email, char* contrasenya){ //MALLOC!
 	char* query = malloc(sizeof(char)*256);
-	//"UPDATE usuario SET contrasenya = ? WHERE mail = ?";
-	sprintf(query, "UPDATE usuario SET pass = '%s' WHERE mail = '%s'",contrasenya,email);
+	sprintf(query, "UPDATE user SET pass = '%s' WHERE mail = '%s'",contrasenya,email);
 	sqlite3_stmt *stmt;
 	int result;
 	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
@@ -419,7 +416,7 @@ void modificarContrasenya(sqlite3 *db, char* email, char* contrasenya){ //MALLOC
 }
 void modificarName(sqlite3 *db, char* email, char* name){ //BIEN
 	char* query = malloc(sizeof(char)*256);
-	sprintf(query, "UPDATE usuario SET name = '%s' WHERE mail = '%s'",name,email);
+	sprintf(query, "UPDATE user SET name = '%s' WHERE mail = '%s'",name,email);
 	sqlite3_stmt *stmt;
 	int result;
 	sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
@@ -495,7 +492,7 @@ void visualizarUsuarios(sqlite3 *db){ //MALLOC!
 void imprimirUsuarios(sqlite3 *db){
 	int numR; //Numero de filas. Truco: SELECT Count(*) FROM tblName
 	FILE* f;
-	f = fopen("usuarios.tbl", "w");
+	f = fopen("usuarios.txt", "w");
 	int result;
 	char* query =  malloc(sizeof(char)*128);
 	sprintf(query, "SELECT MAX(id) FROM User");
