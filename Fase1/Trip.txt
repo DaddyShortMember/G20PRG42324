@@ -1,0 +1,3 @@
+[ID] 4 [busID] 3 [pathID] 3 [Hora Salida] 10:00:00 [Hora Llegada] 12:30:00 [Precio] 20 
+[ID] 3 [busID] 2 [pathID] 2 [Hora Salida] 12:00:00 [Hora Llegada] 13:00:00 [Precio] 15 
+[ID] 2 [busID] 1 [pathID] 1 [Hora Salida] 12:00:00 [Hora Llegada] 15:00:00 [Precio] 30 

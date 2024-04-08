@@ -14,11 +14,12 @@ typedef struct{
 }Path; //X Bytes, malloc necesario para arrays
 
 Path getPath(sqlite3 *db, int id);
-Path creaPath(int id, char* name);
+Path creaPath(int initialStop, int finalStop);
 void anyadirPath(sqlite3 *db, Path Path);
+
+int pathcrtrscr(sqlite3 *db);
 
 void visualizarCaminos(sqlite3 *db);
 void imprimirCaminos(sqlite3 *db);
-int pathcrtrscr(sqlite3 *db);
 
 #endif

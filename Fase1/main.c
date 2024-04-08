@@ -346,7 +346,6 @@ int tripscr(sqlite3* db){
 }//menu de visualizacion/modificacion sobre: viajes (rutas)
 
 int routescr(sqlite3* db){
-	/*
 	int ret;
 	int flg = 0;
 	int flg2 = 1;
@@ -372,21 +371,37 @@ int routescr(sqlite3* db){
 		fgets(buffer,3,stdin);
 		sscanf(buffer, "%d", &usi);
 		switch(usi){
-			case 0:	fflush(stdin);
-					system("CLS");
-					ret = usi;
-					flg++;
+			case 0:
+                fflush(stdin);
+                system("CLS");
+                ret = usi;
+                flg++;
+                break;
+            case 1:
+                visualizarRutas(db);
+                break;
+            case 2:
+                imprimirRutas(db);
+                break;
+            case 3:
+                while(flg2 == 1){
+                    flg2 = rtcrtrscr(db); // Función para añadir una nueva ruta
+                }
+                break;
+			case 4: visualizarParadas(db);
 					break;
-			case 1: visualizarTrip(db);
+			case 5: imprimirParadas(db);
 					break;
-			case 2: imprimirTrip(db);
-					break;
-			case 3: while(flg2 == 1){
-					flg2 = trpcrtrscr(db);
+			case 6: while(flg2 == 1){
+					flg2 = stopcrtrscr(db);
 					}
 					break;
-			case 4: while(flg2 == 1){
-					flg2 = trpdltscr(db);
+			case 7: visualizarCaminos(db);
+					break;
+			case 8: imprimirCaminos(db);
+					break;
+			case 9: while(flg2 == 1){
+					flg2 = pathcrtrscr(db);
 					}
 					break;
 			default: system("CLS");
@@ -395,5 +410,4 @@ int routescr(sqlite3* db){
 		}
 	}
 	return ret;
-*/
 }//menu de visualizacion/modificacion sobre: rutas

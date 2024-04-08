@@ -1,0 +1,1050 @@
+[2024-04-08 01:49:56] BEGINNING
+[2024-04-08 01:51:16] BEGINNING
+[2024-04-08 01:52:35] BEGINNING
+[2024-04-08 01:53:07] BEGINNING
+[2024-04-08 01:53:09] executed select id from User where mail=: [ERROR]
+[2024-04-08 01:53:10] executed select contrasenya from User where mail=: [ERROR]
+[2024-04-08 01:53:12] executed select contrasenya from User where mail=: [ERROR]
+[2024-04-08 01:53:13] executed select contrasenya from User where mail=: [ERROR]
+[2024-04-08 01:53:18] BEGINNING
+[2024-04-08 01:53:20] executed select id from User where mail=: [ERROR]
+[2024-04-08 01:53:20] executed select contrasenya from User where mail=: [ERROR]
+[2024-04-08 01:53:21] executed select contrasenya from User where mail=: [ERROR]
+[2024-04-08 01:53:22] executed select contrasenya from User where mail=: [ERROR]
+[2024-04-08 01:53:24] BEGINNING
+[2024-04-08 01:54:10] BEGINNING
+[2024-04-08 01:56:13] BEGINNING
+[2024-04-08 01:58:17] BEGINNING
+[2024-04-08 01:58:18] executed select id from User where mail=˜1Ô: [ERROR]
+[2024-04-08 01:58:18] executed select contrasenya from User where mail=˜1Ô: [ERROR]
+[2024-04-08 01:58:19] executed select contrasenya from User where mail=˜1Ô: [ERROR]
+[2024-04-08 01:58:19] executed select contrasenya from User where mail=˜1Ô: [ERROR]
+[2024-04-08 01:58:21] BEGINNING
+[2024-04-08 01:58:22] executed select id from User where mail=˜1×: [ERROR]
+[2024-04-08 01:58:22] executed select contrasenya from User where mail=˜1×: [ERROR]
+[2024-04-08 01:58:23] executed select contrasenya from User where mail=˜1×: [ERROR]
+[2024-04-08 01:58:23] executed select contrasenya from User where mail=˜1×: [ERROR]
+[2024-04-08 01:58:25] BEGINNING
+[2024-04-08 01:58:26] executed select id from User where mail=˜1Ë: [ERROR]
+[2024-04-08 01:58:26] executed select contrasenya from User where mail=˜1Ë: [ERROR]
+[2024-04-08 01:58:27] executed select contrasenya from User where mail=˜1Ë: [ERROR]
+[2024-04-08 01:58:27] executed select contrasenya from User where mail=˜1Ë: [ERROR]
+[2024-04-08 01:58:29] BEGINNING
+[2024-04-08 01:58:30] executed select id from User where mail=˜1å: [ERROR]
+[2024-04-08 01:59:17] BEGINNING
+[2024-04-08 02:00:50] BEGINNING
+[2024-04-08 02:00:51] executed select id from User where mail = ˜1â: [ERROR]
+[2024-04-08 02:00:52] executed select contrasenya from User where mail=˜1â: [ERROR]
+[2024-04-08 02:00:52] executed select contrasenya from User where mail=˜1â: [ERROR]
+[2024-04-08 02:00:53] executed select contrasenya from User where mail=˜1â: [ERROR]
+[2024-04-08 02:00:54] BEGINNING
+[2024-04-08 02:02:07] BEGINNING
+[2024-04-08 02:02:33] BEGINNING
+[2024-04-08 02:03:05] BEGINNING
+[2024-04-08 02:03:14] BEGINNING
+[2024-04-08 02:03:45] BEGINNING
+[2024-04-08 02:05:29] BEGINNING
+[2024-04-08 02:05:30] executed select id from User where mail = aaa: [ERROR]
+[2024-04-08 02:05:31] executed select contrasenya from User where mail=aaa: [ERROR]
+[2024-04-08 02:05:33] executed select contrasenya from User where mail=aaa: [ERROR]
+[2024-04-08 02:05:34] executed select contrasenya from User where mail=aaa: [ERROR]
+[2024-04-08 02:05:37] BEGINNING
+[2024-04-08 02:05:40] executed select id from User where mail = mail: [ERROR]
+[2024-04-08 02:06:11] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:06:14] executed select contrasenya from User where mail=admin@admin.com: [ERROR]
+[2024-04-08 02:07:09] BEGINNING
+[2024-04-08 02:07:14] executed select id from User where mail = admin@mail.com: [ERROR]
+[2024-04-08 02:07:17] executed select contrasenya from User where mail=admin@mail.com: [ERROR]
+[2024-04-08 02:07:24] executed select contrasenya from User where mail=admin@mail.com: [ERROR]
+[2024-04-08 02:07:41] executed select contrasenya from User where mail=admin@mail.com: [ERROR]
+[2024-04-08 02:07:43] BEGINNING
+[2024-04-08 02:07:49] executed select id from User where mail = viajesSA@mail.com: [ERROR]
+[2024-04-08 02:07:50] executed select contrasenya from User where mail=viajesSA@mail.com: [ERROR]
+[2024-04-08 02:08:54] BEGINNING
+[2024-04-08 02:08:59] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:09:02] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:09:07] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:09:07] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:09:09] BEGINNING
+[2024-04-08 02:09:11] executed select id from User where mail = viajesSA@m: [ERROR]
+[2024-04-08 02:09:13] executed select contrasenya from User where mail = viajesSA@m: [ERROR]
+[2024-04-08 02:09:13] executed select contrasenya from User where mail = viajesSA@m: [ERROR]
+[2024-04-08 02:09:13] executed select contrasenya from User where mail = viajesSA@m: [ERROR]
+[2024-04-08 02:09:16] BEGINNING
+[2024-04-08 02:09:17] executed select id from User where mail = aaa: [ERROR]
+[2024-04-08 02:09:18] executed select contrasenya from User where mail = aaa: [ERROR]
+[2024-04-08 02:09:18] executed select contrasenya from User where mail = aaa: [ERROR]
+[2024-04-08 02:09:19] executed select contrasenya from User where mail = aaa: [ERROR]
+[2024-04-08 02:10:34] BEGINNING
+[2024-04-08 02:10:38] executed select id from User where mail = a: [ERROR]
+[2024-04-08 02:10:39] executed select contrasenya from User where mail = a: [ERROR]
+[2024-04-08 02:10:39] executed select contrasenya from User where mail = a: [ERROR]
+[2024-04-08 02:10:40] executed select contrasenya from User where mail = a: [ERROR]
+[2024-04-08 02:10:42] BEGINNING
+[2024-04-08 02:10:46] executed select id from User where mail = mail@mail.com: [ERROR]
+[2024-04-08 02:10:47] executed select contrasenya from User where mail = mail@mail.com: [ERROR]
+[2024-04-08 02:10:47] executed select contrasenya from User where mail = mail@mail.com: [ERROR]
+[2024-04-08 02:10:47] executed select contrasenya from User where mail = mail@mail.com: [ERROR]
+[2024-04-08 02:10:49] BEGINNING
+[2024-04-08 02:10:53] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:10:53] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:10:54] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:10:54] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:10:56] BEGINNING
+[2024-04-08 02:11:02] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:03] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:03] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:03] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:04] BEGINNING
+[2024-04-08 02:11:08] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:08] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:09] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:09] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:11:33] BEGINNING
+[2024-04-08 02:11:35] executed select id from User where mail = mail: [ERROR]
+[2024-04-08 02:11:47] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:12:36] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:12:37] executed select contrasenya from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:12:39] BEGINNING
+[2024-04-08 02:12:48] BEGINNING
+[2024-04-08 02:12:50] executed select id from User where mail = mail@mail: [ERROR]
+[2024-04-08 02:12:58] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:13:41] BEGINNING
+[2024-04-08 02:13:44] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:14:09] executed select id from User where mail = viajesSA@mail.com: [ERROR]
+[2024-04-08 02:14:12] executed select id from User where mail = mail: [ERROR]
+[2024-04-08 02:17:46] BEGINNING
+[2024-04-08 02:17:49] executed select id from User where mail = mail@mail.com: [ERROR]
+[2024-04-08 02:19:08] BEGINNING
+[2024-04-08 02:19:11] executed select id from User where mail = mail@mail.com: [ERROR]
+[2024-04-08 02:19:25] executed select id from User where mail = admin@admin.com: [ERROR]
+[2024-04-08 02:19:59] BEGINNING
+[2024-04-08 02:20:01] executed select id from User where mail = 'admin' : [OK]
+[2024-04-08 02:20:08] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:20:33] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:20:39] BEGINNING
+[2024-04-08 02:20:41] executed select id from User where mail = 'juancho' : [OK]
+[2024-04-08 02:20:49] executed select id from User where mail = 'juancho@pancho.com' : [ERROR]
+[2024-04-08 02:22:45] BEGINNING
+[2024-04-08 02:22:48] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:22:59] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:23:56] BEGINNING
+[2024-04-08 02:23:58] executed select id from User where mail = 'mail@mail' : [OK]
+[2024-04-08 02:24:04] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:24:56] BEGINNING
+[2024-04-08 02:24:59] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:25:22] BEGINNING
+[2024-04-08 02:25:25] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:26:00] BEGINNING
+[2024-04-08 02:26:04] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:26:09] executed select contrasenya from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:26:11] executed select contrasenya from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:26:15] BEGINNING
+[2024-04-08 02:26:16] executed select id from User where mail = 'juan' : [OK]
+[2024-04-08 02:26:22] executed select id from User where mail = 'juancho@pancho.com' : [ERROR]
+[2024-04-08 02:26:30] executed select id from User where mail = 'viajesSA@mail.com' : [ERROR]
+[2024-04-08 02:26:35] executed select contrasenya from User where mail = 'viajesSA@mail.com': [ERROR]
+[2024-04-08 02:28:32] BEGINNING
+[2024-04-08 02:28:35] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:28:39] executed select contrasenya from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:30:05] BEGINNING
+[2024-04-08 02:30:08] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:30:30] BEGINNING
+[2024-04-08 02:30:32] executed select id from User where mail = 'mail' : [OK]
+[2024-04-08 02:30:35] executed select id from User where mail = 'mail' : [OK]
+[2024-04-08 02:30:38] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:31:07] BEGINNING
+[2024-04-08 02:31:10] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:31:13] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:31:13] admin@admin.com logged in
+[2024-04-08 02:31:19] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:31:19] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:31:19] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:31:52] SHUTDOWN
+
+ [2024-04-08 02:31:53] BEGINNING
+[2024-04-08 02:31:58] executed select id from User where mail = 'viajesSA@mail.com' : [ERROR]
+[2024-04-08 02:32:00] executed select pass from User where mail = 'viajesSA@mail.com': [ERROR]
+[2024-04-08 02:32:04] executed select pass from User where mail = 'viajesSA@mail.com': [ERROR]
+[2024-04-08 02:32:04] viajesSA@mail.com logged in
+[2024-04-08 02:32:08] BEGINNING
+[2024-04-08 02:33:39] BEGINNING
+[2024-04-08 02:33:42] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:33:45] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:33:45] admin@admin.com logged in
+[2024-04-08 02:33:49] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:33:49] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:33:49] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:34:01] executed select id from User where mail = 'kay@kay.com' : [OK]
+[2024-04-08 02:34:08] executed insert into User (id, name, mail, pass, auth) values (NULL,'almendras','kay@kay.com','kayKay',1): [OK]
+[2024-04-08 02:34:19] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:34:19] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:34:19] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:34:19] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:34:19] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:34:30] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 02:34:32] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:34:32] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:34:32] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:34:41] executed select id from User where mail = 'kay@kay.com' : [OK]
+[2024-04-08 02:34:43] executed insert into User (id, name, mail, pass, auth) values (NULL,'almond','kay@kay.com','123',1): [OK]
+[2024-04-08 02:34:47] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:34:47] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:34:47] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:34:47] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:34:47] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:41:16] BEGINNING
+[2024-04-08 02:41:20] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:41:23] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:41:23] admin@admin.com logged in
+[2024-04-08 02:41:43] executed select id from User where mail = 'diaphne@mail.com' : [OK]
+[2024-04-08 02:41:49] executed insert into User (id, name, mail, pass, auth) values (NULL,'Diaphne','diaphne@mail.com','Daphneeee',3): [ERROR]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:41:56] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:44:42] BEGINNING
+[2024-04-08 02:44:45] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:44:48] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:44:48] admin@admin.com logged in
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:44:50] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:44:52] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:45:02] executed select id from User where mail = 'Ligma@mail.com' : [OK]
+[2024-04-08 02:45:12] executed insert into User (id, name, mail, pass, auth) values (NULL,'Ligma','Ligma@mail.com','ligmaaa',2): [ERROR]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:45:56] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:46:07] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 02:49:28] BEGINNING
+[2024-04-08 02:49:30] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:49:33] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:49:33] admin@admin.com logged in
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:49:36] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:49:47] executed select id from User where mail = 'Lewi@mail.com' : [OK]
+[2024-04-08 02:49:50] executed insert into User (id, name, mail, pass, auth) values (NULL,'Louis','Lewi@mail.com','1234',3): [ERROR]
+[2024-04-08 02:51:02] BEGINNING
+[2024-04-08 02:51:20] BEGINNING
+[2024-04-08 02:51:23] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:51:26] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:51:26] admin@admin.com logged in
+[2024-04-08 02:51:32] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:51:35] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 02:51:47] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:51:52] executed select id from User where mail = 'admin@admin.admin' : [OK]
+[2024-04-08 02:51:57] executed insert into User (id, name, mail, pass, auth) values (NULL,'admin?','admin@admin.admin','1234',1): [ERROR]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 02:52:08] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 02:53:54] BEGINNING
+[2024-04-08 02:54:01] BEGINNING
+[2024-04-08 02:54:05] executed select id from User where mail = 'admin@admin.admin' : [ERROR]
+[2024-04-08 02:54:06] executed select pass from User where mail = 'admin@admin.admin': [ERROR]
+[2024-04-08 02:54:06] admin@admin.admin logged in
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 02:54:07] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 02:54:19] executed select id from User where mail = 'liz@mail.com' : [OK]
+[2024-04-08 02:54:27] executed insert into User (id, name, mail, pass, auth) values (NULL,'Lizzie','liz@mail.com','123',3): [ERROR]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 02:54:33] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 02:56:16] BEGINNING
+[2024-04-08 02:56:19] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 02:56:22] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 02:56:22] admin@admin.com logged in
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 02:56:25] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 02:56:36] executed select id from User where mail = 'lis@mail.com' : [OK]
+[2024-04-08 02:56:41] executed insert into User (id, name, mail, pass, auth) values (NULL,'lis','lis@mail.com','lis',3): [ERROR]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 02:56:47] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 02:57:41] BEGINNING
+[2024-04-08 02:57:45] executed select id from User where mail = 'admin@admin.admin' : [ERROR]
+[2024-04-08 02:57:46] executed select pass from User where mail = 'admin@admin.admin': [ERROR]
+[2024-04-08 02:57:46] admin@admin.admin logged in
+[2024-04-08 02:57:52] executed select id from User where mail = 'a' : [OK]
+[2024-04-08 02:57:55] executed insert into User (id, name, mail, pass, auth) values (NULL,'a','a','a',1): [ERROR]
+[2024-04-08 03:02:09] BEGINNING
+[2024-04-08 03:02:19] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 03:02:23] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 03:02:23] admin@admin.com logged in
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:02:24] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:02:25] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:02:33] executed select id from User where mail = 'liz@ie.com' : [OK]
+[2024-04-08 03:04:06] executed insert into User (id, name, mail, pass, auth) values (NULL,'lizzie','liz@ie.com','123',3): [ERROR]
+[2024-04-08 03:04:14] BEGINNING
+[2024-04-08 03:04:19] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 03:04:21] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 03:04:21] admin@admin.com logged in
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:04:22] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:04:24] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:04:25] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:04:32] executed select id from User where mail = 'mom@mail.com' : [OK]
+[2024-04-08 03:04:38] executed insert into User (id, name, mail, pass, auth) values (NULL,'mom','mom@mail.com','321',3): [OK]
+[2024-04-08 03:05:38] BEGINNING
+[2024-04-08 03:05:42] executed select id from User where mail = 'admin@admin.com' : [ERROR]
+[2024-04-08 03:05:45] executed select pass from User where mail = 'admin@admin.com': [ERROR]
+[2024-04-08 03:05:45] admin@admin.com logged in
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:05:47] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:05:50] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:05:56] executed select id from User where mail = 'moe@moe.com' : [OK]
+[2024-04-08 03:05:57] executed insert into User (id, name, mail, pass, auth) values (NULL,'moe','moe@moe.com','123',1): [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:06:05] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:06:06] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:06:12] executed select id from User where mail = '' : [OK]
+[2024-04-08 03:07:42] BEGINNING
+[2024-04-08 03:07:44] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:07:45] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:07:45] moe@moe.com logged in
+[2024-04-08 03:07:51] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:09:52] BEGINNING
+[2024-04-08 03:09:55] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:09:55] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:09:55] moe@moe.com logged in
+[2024-04-08 03:10:02] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:11:07] BEGINNING
+[2024-04-08 03:11:10] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:11:11] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:11:11] moe@moe.com logged in
+[2024-04-08 03:11:16] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:11:19] executed UPDATE user SET name = 'Looo' WHERE mail = 'moe@moe.com': [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:11:21] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:11:32] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:11:36] executed UPDATE user SET name = 'Moe' WHERE mail = 'moe@moe.com': [OK]
+[2024-04-08 03:11:40] executed select id from User where mail = 'Moe@moe.com' : [OK]
+[2024-04-08 03:11:42] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:11:56] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:12:01] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:12:28] BEGINNING
+[2024-04-08 03:12:30] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:12:31] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:12:31] moe@moe.com logged in
+[2024-04-08 03:14:33] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:14:45] SHUTDOWN
+
+ [2024-04-08 03:14:46] BEGINNING
+[2024-04-08 03:14:50] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:14:51] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:14:51] moe@moe.com logged in
+[2024-04-08 03:14:58] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:16:14] BEGINNING
+[2024-04-08 03:16:16] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:16:16] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:16:16] moe@moe.com logged in
+[2024-04-08 03:16:22] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:17:28] BEGINNING
+[2024-04-08 03:17:31] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:17:31] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:17:31] moe@moe.com logged in
+[2024-04-08 03:17:36] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:18:03] BEGINNING
+[2024-04-08 03:18:05] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 03:18:06] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 03:18:06] moe@moe.com logged in
+[2024-04-08 03:18:11] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:18:22] executed select id from User where mail = 'kay@kay.com' : [ERROR]
+[2024-04-08 03:18:28] executed UPDATE user SET pass = 'KayKay' WHERE mail = 'kay@kay.com': [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:18:30] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 03:18:32] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 05:28:06] BEGINNING
+[2024-04-08 05:28:09] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 05:28:11] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 05:28:11] moe@moe.com logged in
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 05:28:13] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 05:28:27] executed select id from User where mail = 'mo@mo.com' : [OK]
+[2024-04-08 05:28:29] executed insert into User (id, name, mail, pass, auth) values (NULL,'moe','mo@mo.com','123',2): [OK]
+[2024-04-08 05:28:36] SHUTDOWN
+
+ [2024-04-08 05:28:37] BEGINNING
+[2024-04-08 05:28:40] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 05:28:41] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 05:28:41] mo@mo.com logged in
+[2024-04-08 05:28:45] BEGINNING
+[2024-04-08 05:28:49] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 05:28:49] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 05:28:49] mo@mo.com logged in
+[2024-04-08 05:31:08] BEGINNING
+[2024-04-08 05:31:11] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 05:31:11] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 05:31:11] mo@mo.com logged in
+[2024-04-08 05:34:37] BEGINNING
+[2024-04-08 05:34:39] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 05:34:40] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 05:34:40] mo@mo.com logged in
+[2024-04-08 05:43:36] BEGINNING
+[2024-04-08 05:43:40] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 05:43:40] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 05:43:40] mo@mo.com logged in
+[2024-04-08 05:50:46] BEGINNING
+[2024-04-08 05:50:49] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 05:50:49] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 05:50:49] mo@mo.com logged in
+[2024-04-08 05:50:58] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 2, 2,'2','2',2): [OK]
+[2024-04-08 05:51:02] executed SELECT * FROM trip where id = 1: [OK]
+[2024-04-08 17:07:34] BEGINNING
+[2024-04-08 17:07:38] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:07:38] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:07:40] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:07:40] mo@mo.com logged in
+[2024-04-08 17:09:40] BEGINNING
+[2024-04-08 17:09:43] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:09:43] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:09:43] mo@mo.com logged in
+[2024-04-08 17:09:54] executed insert into Bus (id, license, price) values (NULL, 'MAAA123', 12340): [ERROR]
+[2024-04-08 17:10:33] BEGINNING
+[2024-04-08 17:10:35] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:10:36] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:10:36] mo@mo.com logged in
+[2024-04-08 17:10:46] executed insert into Bus (id, license, seats) values (NULL, 'MA123', 12339): [OK]
+[2024-04-08 17:18:45] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 17:19:08] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 1, 1,'12:00:0015:00:00','15:00:00',30): [OK]
+[2024-04-08 17:19:12] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:27:05] BEGINNING
+[2024-04-08 17:27:07] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:27:08] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:27:08] mo@mo.com logged in
+[2024-04-08 17:27:10] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:27:11] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:27:14] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:27:14] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:27:16] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:27:58] BEGINNING
+[2024-04-08 17:28:15] BEGINNING
+[2024-04-08 17:28:17] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:28:17] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:28:17] mo@mo.com logged in
+[2024-04-08 17:28:19] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:28:21] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:39:05] BEGINNING
+[2024-04-08 17:39:07] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:39:08] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:39:08] mo@mo.com logged in
+[2024-04-08 17:39:11] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 17:39:13] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:40:19] BEGINNING
+[2024-04-08 17:40:21] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:40:22] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:40:22] mo@mo.com logged in
+[2024-04-08 17:40:24] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:40:27] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 17:41:10] BEGINNING
+[2024-04-08 17:41:12] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 17:41:12] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 17:41:12] mo@mo.com logged in
+[2024-04-08 17:41:15] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 17:41:18] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 17:41:38] SHUTDOWN
+
+ [2024-04-08 18:06:42] BEGINNING
+[2024-04-08 18:06:44] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:06:45] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:06:45] mo@mo.com logged in
+[2024-04-08 18:06:49] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:06:51] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:06:54] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:07:12] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 2, 2,'12:00:0013:00:00','13:00:00',15): [OK]
+[2024-04-08 18:07:16] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:07:16] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:08:46] BEGINNING
+[2024-04-08 18:08:48] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:08:49] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:08:49] mo@mo.com logged in
+[2024-04-08 18:08:51] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:08:51] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:09:08] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 3, 3,'10:00:0','12:30:0',20): [OK]
+[2024-04-08 18:09:10] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:09:18] BEGINNING
+[2024-04-08 18:09:21] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:09:22] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:09:22] mo@mo.com logged in
+[2024-04-08 18:09:24] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:09:24] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:09:24] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:09:53] SHUTDOWN
+
+ [2024-04-08 18:11:10] BEGINNING
+[2024-04-08 18:11:12] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:11:12] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:11:12] mo@mo.com logged in
+[2024-04-08 18:11:14] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:11:14] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:11:14] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:11:16] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:11:16] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:11:16] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:11:33] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 4, 4,'12:00:0016:45:00(','16:45:00(',40): [OK]
+[2024-04-08 18:11:35] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:11:35] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:11:35] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:11:35] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:11:41] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:11:41] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:11:41] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:11:41] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:11:45] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:11:46] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:11:48] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:11:49] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:11:49] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:11:49] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:11:49] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:16:45] BEGINNING
+[2024-04-08 18:16:47] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:16:48] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:16:48] mo@mo.com logged in
+[2024-04-08 18:17:00] executed insert into Bus (id, license, seats) values (NULL, 'MB12342', 12342): [OK]
+[2024-04-08 18:17:08] executed insert into Bus (id, license, seats) values (NULL, 'MA12111', 12341): [OK]
+[2024-04-08 18:17:12] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:17:12] executed SELECT * FROM bus where id = 2: [OK]
+[2024-04-08 18:17:12] executed SELECT * FROM bus where id = 3: [OK]
+[2024-04-08 18:20:35] BEGINNING
+[2024-04-08 18:20:37] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:20:38] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:20:38] mo@mo.com logged in
+[2024-04-08 18:20:43] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:20:43] executed SELECT * FROM bus where id = 2: [OK]
+[2024-04-08 18:20:43] executed SELECT * FROM bus where id = 3: [OK]
+[2024-04-08 18:20:55] executed insert into Bus (id, license, seats) values (NULL, 'MA24VCX', 15): [OK]
+[2024-04-08 18:21:00] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:21:00] executed SELECT * FROM bus where id = 2: [OK]
+[2024-04-08 18:21:00] executed SELECT * FROM bus where id = 3: [OK]
+[2024-04-08 18:21:00] executed SELECT * FROM bus where id = 4: [OK]
+[2024-04-08 18:21:04] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 18:21:04] executed SELECT * FROM bus where id = 2: [OK]
+[2024-04-08 18:21:04] executed SELECT * FROM bus where id = 3: [OK]
+[2024-04-08 18:21:04] executed SELECT * FROM bus where id = 4: [OK]
+[2024-04-08 18:28:15] BEGINNING
+[2024-04-08 18:28:17] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:28:17] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:28:17] mo@mo.com logged in
+[2024-04-08 18:28:21] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:28:21] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:28:21] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:28:21] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:28:42] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 5, 5,'09:00:0013:40:00','13:40:00',30): [OK]
+[2024-04-08 18:28:46] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:28:46] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:28:46] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:28:46] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:28:46] executed SELECT * FROM trip where id = 6: [OK]
+[2024-04-08 18:44:43] BEGINNING
+[2024-04-08 18:44:45] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:44:46] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:44:46] mo@mo.com logged in
+[2024-04-08 18:46:26] BEGINNING
+[2024-04-08 18:46:27] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:46:28] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:46:28] mo@mo.com logged in
+[2024-04-08 18:46:32] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:46:32] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:46:32] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:46:32] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:46:32] executed SELECT * FROM trip where id = 6: [OK]
+[2024-04-08 18:49:59] BEGINNING
+[2024-04-08 18:50:03] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:50:04] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:50:04] mo@mo.com logged in
+[2024-04-08 18:50:07] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:50:07] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:50:07] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:50:07] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:50:07] executed SELECT * FROM trip where id = 6: [OK]
+[2024-04-08 18:50:25] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 10, 10,'12:00:2010:00:00','10:00:00',30): [ERROR]
+[2024-04-08 18:52:26] BEGINNING
+[2024-04-08 18:53:30] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:53:31] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:53:31] mo@mo.com logged in
+[2024-04-08 18:53:32] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:53:32] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:53:32] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:53:32] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:53:32] executed SELECT * FROM trip where id = 6: [OK]
+[2024-04-08 18:54:02] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 10, 10,'10:00:0011:11:11d','11:11:11d',100): [ERROR]
+[2024-04-08 18:55:07] BEGINNING
+[2024-04-08 18:55:10] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:55:10] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:55:10] mo@mo.com logged in
+[2024-04-08 18:56:47] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 100, 100,'10:00:0012:00:00è','12:00:00è',1000): [ERROR]
+[2024-04-08 18:56:54] BEGINNING
+[2024-04-08 18:56:56] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:56:57] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:56:57] mo@mo.com logged in
+[2024-04-08 18:56:59] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 18:56:59] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 18:56:59] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 18:56:59] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 18:56:59] executed SELECT * FROM trip where id = 6: [OK]
+[2024-04-08 18:57:19] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 10, 100,'10:00:0020:00:00è','20:00:00è',1000): [ERROR]
+[2024-04-08 18:59:18] BEGINNING
+[2024-04-08 18:59:20] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 18:59:20] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 18:59:20] mo@mo.com logged in
+[2024-04-08 19:02:33] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 100, 1000,'20:00:0023:00:00áþl','23:00:00áþl',7143137): [ERROR]
+[2024-04-08 19:02:41] BEGINNING
+[2024-04-08 19:02:45] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:02:46] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:02:46] mo@mo.com logged in
+[2024-04-08 19:03:55] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 100, 100,'10:00:0012:00:00d','12:00:00d',100): [ERROR]
+[2024-04-08 19:04:03] BEGINNING
+[2024-04-08 19:04:06] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:04:06] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:04:06] mo@mo.com logged in
+[2024-04-08 19:04:41] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 1000, 1000,'10:00:0023:00:00è','23:00:00è',1000): [ERROR]
+[2024-04-08 19:12:09] BEGINNING
+[2024-04-08 19:12:11] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:12:12] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:12:12] mo@mo.com logged in
+[2024-04-08 19:13:51] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 100, 1000,'23:00:0009:00:00Ð','09:00:00Ð',2000): [ERROR]
+[2024-04-08 19:18:18] BEGINNING
+[2024-04-08 19:18:21] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:18:21] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:18:21] mo@mo.com logged in
+[2024-04-08 19:18:40] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 1000, 100,'10:00:0020:00:00f','20:00:00f',102): [ERROR]
+[2024-04-08 19:25:30] BEGINNING
+[2024-04-08 19:25:32] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:25:33] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:25:33] mo@mo.com logged in
+[2024-04-08 19:25:59] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 10, 20,'23:00:0020:00:00','20:00:00',12): [ERROR]
+[2024-04-08 19:27:29] BEGINNING
+[2024-04-08 19:27:33] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:27:33] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:27:33] mo@mo.com logged in
+[2024-04-08 19:30:59] BEGINNING
+[2024-04-08 19:31:23] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:31:25] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:31:25] mo@mo.com logged in
+[2024-04-08 19:31:41] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 10, 100,'12:00:00','20:00:00',1000): [ERROR]
+[2024-04-08 19:33:10] BEGINNING
+[2024-04-08 19:33:12] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:33:12] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:33:12] mo@mo.com logged in
+[2024-04-08 19:33:23] executed insert into Trip (id, bus, path, etime, atime, price) values (NULL, 9, 10,'10:00:00','20:00:00',100): [OK]
+[2024-04-08 19:33:27] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 19:33:27] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 19:33:27] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 19:33:27] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 19:33:32] BEGINNING
+[2024-04-08 19:33:34] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 19:33:34] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 19:33:34] mo@mo.com logged in
+[2024-04-08 19:33:36] executed SELECT * FROM trip where id = 2: [OK]
+[2024-04-08 19:33:36] executed SELECT * FROM trip where id = 3: [OK]
+[2024-04-08 19:33:36] executed SELECT * FROM trip where id = 4: [OK]
+[2024-04-08 19:33:36] executed SELECT * FROM trip where id = 5: [OK]
+[2024-04-08 19:33:36] executed SELECT * FROM trip where id = 6: [OK]
+[2024-04-08 19:33:36] executed SELECT * FROM trip where id = 7: [OK]
+[2024-04-08 19:33:55] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 19:33:55] executed SELECT * FROM bus where id = 2: [OK]
+[2024-04-08 19:33:55] executed SELECT * FROM bus where id = 3: [OK]
+[2024-04-08 19:33:55] executed SELECT * FROM bus where id = 4: [OK]
+[2024-04-08 19:33:57] executed SELECT * FROM bus where id = 1: [OK]
+[2024-04-08 19:33:57] executed SELECT * FROM bus where id = 2: [OK]
+[2024-04-08 19:33:57] executed SELECT * FROM bus where id = 3: [OK]
+[2024-04-08 19:33:57] executed SELECT * FROM bus where id = 4: [OK]
+[2024-04-08 20:08:21] BEGINNING
+[2024-04-08 20:08:23] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:08:24] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:08:24] mo@mo.com logged in
+[2024-04-08 20:08:54] executed insert into Stop (id, name) values (NULL, 'San'): [OK]
+[2024-04-08 20:08:59] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:09:40] SHUTDOWN
+
+ [2024-04-08 20:12:11] BEGINNING
+[2024-04-08 20:12:14] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:12:15] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:12:15] mo@mo.com logged in
+[2024-04-08 20:12:20] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:23] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:27] executed insert into Stop (id, name) values (NULL, 'Lisboa'): [OK]
+[2024-04-08 20:12:33] executed insert into Stop (id, name) values (NULL, 'Axelot'): [OK]
+[2024-04-08 20:12:37] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:37] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:37] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:44] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:44] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:44] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:45] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:45] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:45] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:47] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:47] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:47] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:48] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:48] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:48] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:49] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:49] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:49] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:50] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:50] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:50] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:12:51] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 20:12:51] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 20:12:51] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 20:27:55] BEGINNING
+[2024-04-08 20:27:57] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:27:58] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:27:58] mo@mo.com logged in
+[2024-04-08 20:29:45] BEGINNING
+[2024-04-08 20:29:47] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:29:48] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:29:48] mo@mo.com logged in
+[2024-04-08 20:35:13] BEGINNING
+[2024-04-08 20:35:15] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:35:15] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:35:15] mo@mo.com logged in
+[2024-04-08 20:35:22] executed INSERT INTO route (id, pathid, currentstopid, nextstopid, ordernumber) VALUES (NUKK, 7143096, 1, 2, 1): [ERROR]
+[2024-04-08 20:37:48] BEGINNING
+[2024-04-08 20:37:50] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:37:51] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:37:51] mo@mo.com logged in
+[2024-04-08 20:37:59] executed INSERT INTO route (id, pathid, currentstopid, nextstopid, ordernumber) VALUES (NULL, 1, 1, 2, 1): [ERROR]
+[2024-04-08 20:39:38] BEGINNING
+[2024-04-08 20:39:42] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:39:42] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:39:42] mo@mo.com logged in
+[2024-04-08 20:39:49] executed INSERT INTO route (id, pthid, csid, nsid, ordnum) VALUES (NULL, 1, 1, 2, 1): [OK]
+[2024-04-08 20:40:10] executed INSERT INTO route (id, pthid, csid, nsid, ordnum) VALUES (NULL, 1, 2, 3, 2): [OK]
+[2024-04-08 20:40:25] SHUTDOWN
+
+ [2024-04-08 20:47:53] BEGINNING
+[2024-04-08 20:48:03] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 20:48:04] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 20:48:04] moe@moe.com logged in
+[2024-04-08 20:48:46] BEGINNING
+[2024-04-08 20:48:50] executed select id from User where mail = 'moe@moe.com' : [ERROR]
+[2024-04-08 20:48:59] executed select pass from User where mail = 'moe@moe.com': [ERROR]
+[2024-04-08 20:48:59] moe@moe.com logged in
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 1: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 2: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 3: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 4: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 5: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 6: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 7: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 8: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 9: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 10: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 11: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 12: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 13: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 14: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 15: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 16: [OK]
+[2024-04-08 20:49:30] executed SELECT * FROM User where id = 17: [OK]
+[2024-04-08 20:49:59] executed select id from User where mail = 'def@mail.com' : [OK]
+[2024-04-08 20:50:08] executed insert into User (id, name, mail, pass, auth) values (NULL,'abc','def@mail.com','123',3): [OK]
+[2024-04-08 20:50:17] SHUTDOWN
+
+ [2024-04-08 20:50:19] BEGINNING
+[2024-04-08 20:50:37] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:50:38] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:50:38] mo@mo.com logged in
+[2024-04-08 20:59:07] BEGINNING
+[2024-04-08 20:59:09] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 20:59:10] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 20:59:10] mo@mo.com logged in
+[2024-04-08 21:00:52] BEGINNING
+[2024-04-08 21:00:54] executed select id from User where mail = 'mo@mo.com' : [ERROR]
+[2024-04-08 21:00:55] executed select pass from User where mail = 'mo@mo.com': [ERROR]
+[2024-04-08 21:00:55] mo@mo.com logged in
+[2024-04-08 21:01:00] executed insert into Path (id, istop, fstop) values (NULL, 1, 2): [OK]
+[2024-04-08 21:01:07] executed SELECT * FROM Path where id = 1: [OK]
+[2024-04-08 21:01:14] executed insert into Path (id, istop, fstop) values (NULL, 1, 10): [OK]
+[2024-04-08 21:01:18] executed SELECT * FROM Path where id = 1: [OK]
+[2024-04-08 21:01:18] executed SELECT * FROM Path where id = 2: [OK]
+[2024-04-08 21:01:30] executed insert into Stop (id, name) values (NULL, 'Laaaaaaac'): [OK]
+[2024-04-08 21:01:38] executed SELECT * FROM stop where id = 1: [OK]
+[2024-04-08 21:01:38] executed SELECT * FROM stop where id = 2: [OK]
+[2024-04-08 21:01:38] executed SELECT * FROM stop where id = 3: [OK]
+[2024-04-08 21:01:38] executed SELECT * FROM stop where id = 4: [OK]
+[2024-04-08 21:01:48] SHUTDOWN
+
+ 

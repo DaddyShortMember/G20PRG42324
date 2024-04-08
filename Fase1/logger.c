@@ -46,7 +46,7 @@ void logAppendDB(sqlite3 *db, char* statement, int result){ //Pone en fichero ex
 		sqlite3_finalize(stmt);
 		f = fopen("log.log", "a");
 		fprintf(f, "[%s] executed %s: ", date, statement);
-		if(result==SQLITE_DONE)
+		if(result==SQLITE_DONE || SQLITE_OK)
 			fprintf(f, "[OK]\n");
 		else
 			fprintf(f, "[ERROR]\n");

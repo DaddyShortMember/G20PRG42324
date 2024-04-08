@@ -94,7 +94,7 @@ int buscrtrscr(sqlite3 *db){
 	system("CLS");
 	printf("[Creacion de Bus]\n\nIntroduzca un numero de asientos valido\n\n");
 	fgets(qBuf,10,stdin);
-	sscanf(qBuf, "%s", &qSeats);
+	sscanf(qBuf, "%d", &qSeats);
 	if(qSeats < 0){ 
 		fflush(stdin);
 		printf("Asientos Invalidos;\nPor favor, introduzca un numero de asientos valido\n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
@@ -197,7 +197,7 @@ void visualizarBuses(sqlite3 *db){
 			qId = sqlite3_column_int(stmt, 0);
             strcpy(qLic,sqlite3_column_text(stmt, 1));
 			qSeats = sqlite3_column_int(stmt, 2);
-			printf("[ID] %d [Licencia] %s [Asientos] %d \n", qId, qLic, qSeats);
+			printf("[ID] %d [Matricula] %s [Asientos] %d \n", qId, qLic, qSeats);
 		}
 		free(qLic);
 		free(query2);
@@ -238,7 +238,7 @@ void imprimirBuses(sqlite3 *db){
 			qId = sqlite3_column_int(stmt, 0);
             strcpy(qLic,sqlite3_column_text(stmt, 1));
 			qSeats = sqlite3_column_int(stmt, 2);
-			fprintf(f, "[ID] %d [Licencia] %s [Asientos] %d \n", qId, qLic, qSeats);
+			fprintf(f, "[ID] %d [Matricula] %s [Asientos] %d \n", qId, qLic, qSeats);
 		}
 		free(qLic);
 		free(query2);

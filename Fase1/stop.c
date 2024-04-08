@@ -11,7 +11,7 @@ Stop getStop(sqlite3 *db, int id){
 	free(query);
 	if (result == SQLITE_ROW) {
 		qStop.id = sqlite3_column_int(stmt, 0);
-		strcpy(qStop.license,sqlite3_column_text(stmt, 2));
+		strcpy(qStop.name,sqlite3_column_text(stmt, 2));
 	}else{
 		system("CLS");
 		qStop.id = 0;
@@ -23,7 +23,7 @@ Stop getStop(sqlite3 *db, int id){
 	return qStop;
 }
 
-Bus creaStop(char* name){
+Stop creaStop(char* name){
 	Stop qStop;
     strcpy(qStop.name, name);
 	return qStop;
@@ -51,13 +51,13 @@ void anyadirStop(sqlite3 *db, Stop stop){
 
 
 //Menus
-void visualizarStops(sqlite3 *db){
+void visualizarParadas(sqlite3 *db){
 	int numR; //Numero de filas. Truco: SELECT Count(*) FROM tblName
 	int result;
 	char* query = malloc(sizeof(char)*128);
 	sprintf(query, "SELECT MAX(id) FROM stop");
 	char* query2;
-	//atrib. bus
+	//atrib. Stop
 	char* qName;
 	int qId;
 	sqlite3_stmt *stmt;
@@ -77,7 +77,7 @@ void visualizarStops(sqlite3 *db){
 			logAppendDB(db, query2, SQLITE_DONE);
 			qId = sqlite3_column_int(stmt, 0);
             strcpy(qName,sqlite3_column_text(stmt, 1));
-			printf("[ID] %d [Licencia] %s [Asientos] %d \n", qId, qName);
+			printf("[ID] %d [Nombre] %s \n", qId, qName);
 		}
 		free(qName);
 		free(query2);
@@ -88,7 +88,7 @@ void visualizarStops(sqlite3 *db){
 
 }
 
-void imprimirStops(sqlite3 *db){
+void imprimirParadas(sqlite3 *db){
 	int numR; //Numero de filas. Truco: SELECT Count(*) FROM tblName
 	FILE* f;
 	f = fopen("Stop.txt", "w");
@@ -96,7 +96,7 @@ void imprimirStops(sqlite3 *db){
 	char* query =  malloc(sizeof(char)*128);
 	sprintf(query, "SELECT MAX(id) FROM stop");
 	char* query2;
-	//atrib. bus
+	//atrib. Stop
 	char* qName;
 	int qId;
 	sqlite3_stmt *stmt;
@@ -128,8 +128,8 @@ void imprimirStops(sqlite3 *db){
 }
 
 int stopcrtrscr(sqlite3 *db){
-    //Menu de creacion de Bus
-	char* qName = malloc(sizeof(char)*10);
+    //Menu de creacion de Stop
+	char* qName = malloc(sizeof(char)*30);
 	char* buffer = malloc(sizeof(char)*2);
 	char* qBuf = malloc(sizeof(char)*11);
 	int res = 0;
@@ -140,11 +140,11 @@ int stopcrtrscr(sqlite3 *db){
 	fflush(stdin);
 	system("CLS");
 	printf("[Creacion de Parada]\n\nIntroduzca un nombre valido\n\n");
-	fgets(qBuf,11,stdin);
+	fgets(qBuf,30,stdin);
 	sscanf(qBuf, "%s", qName);
 	if(strlen(qName) > 30){
 		fflush(stdin);
-		printf("Nombre Invalido;\nDebe tener un maximo de 10 digitos \n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+		printf("Nombre Invalido;\nDebe tener un maximo de 29 digitos \n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
 		getch();
 	}else{
 		fflush(stdin);
@@ -152,9 +152,8 @@ int stopcrtrscr(sqlite3 *db){
 	}
 	}
     flg0--;
-
 	qStop = creaStop(qName);
-	anyadirBus(db,qBus);
+	anyadirStop(db,qStop);
 	printf("[Creacion de Parada]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
 	getch();
 	while(flg0 == 0){
