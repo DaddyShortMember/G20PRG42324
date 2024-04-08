@@ -11,8 +11,7 @@ Stop getStop(sqlite3 *db, int id){
 	free(query);
 	if (result == SQLITE_ROW) {
 		qStop.id = sqlite3_column_int(stmt, 0);
-		strcpy(qStop.license,sqlite3_column_text(stmt, 3));
-		qStop.seats = sqlite3_column_int(stmt, 2);
+		strcpy(qStop.license,sqlite3_column_text(stmt, 2));
 	}else{
 		system("CLS");
 		qStop.id = 0;
@@ -69,7 +68,7 @@ void visualizarStops(sqlite3 *db){
 	system("CLS");
 	printf("[LISTA DE PARADAS]\n\n");
 	for(int i = 0; i <= numR; i++){
-		qName = malloc(sizeof(char)*10);
+		qName = malloc(sizeof(char)*30);
 		query2 = malloc(sizeof(char)*128);
 		sprintf(query2, "SELECT * FROM stop where id = %d", i);
 		sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);
@@ -92,7 +91,7 @@ void visualizarStops(sqlite3 *db){
 void imprimirStops(sqlite3 *db){
 	int numR; //Numero de filas. Truco: SELECT Count(*) FROM tblName
 	FILE* f;
-	f = fopen("Bus.txt", "w");
+	f = fopen("Stop.txt", "w");
 	int result;
 	char* query =  malloc(sizeof(char)*128);
 	sprintf(query, "SELECT MAX(id) FROM stop");
@@ -108,7 +107,7 @@ void imprimirStops(sqlite3 *db){
 	system("CLS");
 	printf("[IMPRIMIENDO PARADAS]\n\n");
 	for(int i = numR; i > 0; i--){
-		qName = malloc(sizeof(char)*10);
+		qName = malloc(sizeof(char)*30);
 		query2 = malloc(sizeof(char)*128);
 		sprintf(query2, "SELECT * FROM stop where id = %d", i);
 		sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);
@@ -126,4 +125,52 @@ void imprimirStops(sqlite3 *db){
 	sqlite3_finalize(stmt);
 	printf("\n\n[PARADAS IMPRESAS, PULSE CUALQUIER TECLA PARA CONTINUAR]");
 	getch();
+}
+
+int stopcrtrscr(sqlite3 *db){
+    //Menu de creacion de Bus
+	char* qName = malloc(sizeof(char)*10);
+	char* buffer = malloc(sizeof(char)*2);
+	char* qBuf = malloc(sizeof(char)*11);
+	int res = 0;
+	Stop qStop;
+	int flg0 = 0;
+	int flg1 = 0;
+	while(flg0 < 1){
+	fflush(stdin);
+	system("CLS");
+	printf("[Creacion de Parada]\n\nIntroduzca un nombre valido\n\n");
+	fgets(qBuf,11,stdin);
+	sscanf(qBuf, "%s", qName);
+	if(strlen(qName) > 30){
+		fflush(stdin);
+		printf("Nombre Invalido;\nDebe tener un maximo de 10 digitos \n[PRESIONE CUALQUIER TECLA PARA CONTINUAR]\n");
+		getch();
+	}else{
+		fflush(stdin);
+		flg0++;
+	}
+	}
+    flg0--;
+
+	qStop = creaStop(qName);
+	anyadirBus(db,qBus);
+	printf("[Creacion de Parada]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
+	getch();
+	while(flg0 == 0){
+		system("CLS");
+		printf("Quiere anyadir otra Parada? (1/0)\n");
+		fgets(buffer,2,stdin);
+		sscanf(buffer, "%d", &res);
+		if(res == 1 || res == 0)
+			flg0++;
+		else{
+			printf("[Creacion de Parada]\n\nInput Erronea.\nPresione cualquier tecla para volver a intentar.\n");
+			getch();
+		}
+	}
+	free(qName);
+	free(buffer);
+	free(qBuf);
+	return res;
 }
