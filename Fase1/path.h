@@ -17,4 +17,7 @@ Path getPath(sqlite3 *db, int id);
 Path creaPath(int id, char* name);
 void anyadirPath(sqlite3 *db, Path Path);
 
+void visualizarCaminos(sqlite3 *db);
+void imprimirCaminos(sqlite3 *db);
+
 #endif

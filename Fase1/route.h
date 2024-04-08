@@ -19,4 +19,7 @@ Route getRoute(sqlite3 *db, int id);
 Route creaRoute(int id, char* name);
 void anyadirRoute(sqlite3 *db, Route Route);
 
+void visualizarRutas(sqlite3 *db);
+void imprimirRutas(sqlite3 *db);
+
 #endif

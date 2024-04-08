@@ -16,4 +16,7 @@ Stop getStop(sqlite3 *db, int id);
 Stop creaStop(int id, char* name);
 void anyadirStop(sqlite3 *db, Stop stop);
 
+void visualizarParadas(sqlite3 *db);
+void imprimirParadas(sqlite3 *db);
+
 #endif

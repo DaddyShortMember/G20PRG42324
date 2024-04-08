@@ -17,4 +17,7 @@ Bus getBus(sqlite3 *db, int id);
 Bus creaBus(int id, char* license, int seats);
 void anyadirBus(sqlite3 *db, Bus bus);
 
+void visualizarBuses(sqlite3 *db);
+void imprimirBuses(sqlite3 *db);
+
 #endif

@@ -26,13 +26,10 @@ int usrdltscr(sqlite3 *db); //Para eliminar un usuario
 Usuario getUser(sqlite3 *db, char* email);
 Usuario creaUsuario(char name[30],char email[30],char pass[30],int auth);
 void anyadirUsuario(sqlite3 *db, Usuario usuario);
-void grantAdmin(sqlite3 *db, char* email);
-void removeAdmin(sqlite3 *db, char* email);
-int isAdmin(sqlite3 *db, char* email);
+void modificarAut(sqlite3 *db, char* email, int aut);
 int exists(sqlite3 *db, char* email);
-int exists2(sqlite3 *db, int id);
 int passCheck(sqlite3 *db, char* email, char* pass);
-void modificarname(sqlite3 *db, char* email, char* name);
+void modificarName(sqlite3 *db, char* email, char* name);
 void modificarAuth(sqlite3 *db, char* email, int auth);
 void modificarpass(sqlite3 *db, char* email, char* pass);
 void eliminarUsuario(sqlite3 *db, char* email);
