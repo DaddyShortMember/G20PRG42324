@@ -16,7 +16,7 @@ typedef struct{
 }Route; //X Bytes, malloc necesario para arrays
 
 Route getRoute(sqlite3 *db, int id);
-Route creaRoute(int id, char* name);
+Route creaRoute(int id, int pathid, int currentstopid, int nextstopid, int ordernumber);
 void anyadirRoute(sqlite3 *db, Route Route);
 
 void visualizarRutas(sqlite3 *db);
