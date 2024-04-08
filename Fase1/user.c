@@ -118,7 +118,7 @@ int usmodscr(sqlite3 *db){
 		if(res == 1 || res == 0)
 			flg++;
 		else{
-			printf("[Modificacion de Usuario]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
+			printf("[Modificacion de Usuario]\n\nInput Erroneo\nPulse cualquier tecla para continuar\n");
 			getch();
 		}
 	}
@@ -218,7 +218,7 @@ int usrcrtscr(sqlite3 *db){
 		if(res == 1 || res == 0)
 			flg++;
 		else{
-			printf("[Creacion de Usuario]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
+			printf("[Creacion de Usuario]\n\nInput Erroneo\nPulse cualquier tecla para continuar\n");
 			getch();
 		}
 	}
@@ -261,7 +261,7 @@ int usrdltscr(sqlite3 *db){
 		if(res == 1 || res == 0)
 			flg++;
 		else{
-			printf("[Eliminacion de Usuario]\n\nFuncion Finalizada\nPulse cualquier tecla para continuar\n");
+			printf("[Eliminacion de Usuario]\n\nInput Erroneo\nPulse cualquier tecla para continuar\n");
 			getch();
 		}
 	}
