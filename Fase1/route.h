@@ -18,6 +18,7 @@ typedef struct{
 Route getRoute(sqlite3 *db, int id);
 Route creaRoute(int id, int pathid, int currentstopid, int nextstopid, int ordernumber);
 void anyadirRoute(sqlite3 *db, Route Route);
+int rtcrtrscr(sqlite3 *db);
 
 void visualizarRutas(sqlite3 *db);
 void imprimirRutas(sqlite3 *db);
