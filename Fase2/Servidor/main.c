@@ -58,6 +58,7 @@ int main(void)
 	char usr;
 	char pss;
 	char mil;
+	char qry;
 	int flg = 1;
 
 	printf("\nInitialising Winsock...\n");
@@ -185,8 +186,10 @@ int main(void)
 					flg++;
 				}
 				int n = exists(db,mil);
-				if(n == 1)
+				if(n == 1){
 					flg = -1;
+					aut =  -1;
+				}
 				recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
 			}
 			Usuario us = creaUsuario(usr,mil,pss,aut);
@@ -221,6 +224,9 @@ int main(void)
 
 		if (strcmp(recvBuff, "TRIPSEE") == 0)
 		{
+			sqlite3_stmt *stmt;
+			qry = malloc(sizeof(char)*128);
+			sprintf(qry, "select time('now')");
 			recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
 			if (strcmp(recvBuff, "TRIPSEE-END") == 0); // Nada que hacer
 
