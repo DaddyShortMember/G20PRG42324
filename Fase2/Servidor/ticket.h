@@ -16,4 +16,8 @@ typedef struct{
 
 //Esta la dejamos para la siguiente, al no ser importante para la primera entrega (el programa es servidor local; esta ya es para el programa tal cual)
 
+Ticket getStop(sqlite3 *db, int id);
+Ticket creaStop(char* name);
+void anyadirTicket(sqlite3 *db, Ticket ticket);
+
 #endif
