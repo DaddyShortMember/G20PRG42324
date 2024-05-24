@@ -1,5 +1,7 @@
 #include "ticket.h"
 
+#include "ticket.h"
+
 Ticket getTicket(sqlite3 *db, int id) {
     sqlite3_stmt *stmt;
     Ticket ticket;
@@ -34,6 +36,11 @@ void anyadirTicket(sqlite3 *db, Ticket ticket) {
     char* query = malloc(sizeof(char)*256);
     sqlite3_stmt *stmt;
     int result;
+    char* query2 = malloc(sizeof(char)*128);
+	sprintf(query2, "SELECT date('now')");
+	sqlite3_prepare_v2(db, query2, strlen(query2), &stmt, NULL);
+	sqlite3_step(stmt);
+	strcpy(ticket.date,sqlite3_column_text(stmt, 0));
     sprintf(query, "INSERT INTO Ticket (usid, tripid, date) VALUES (%d, %d, '%s')", ticket.usid, ticket.tripid, ticket.date);
     result = sqlite3_prepare_v2(db, query, strlen(query), &stmt, NULL);
     if (result != SQLITE_OK) {
@@ -46,5 +53,6 @@ void anyadirTicket(sqlite3 *db, Ticket ticket) {
         printf("Ticket introducido\n");
     }
     free(query);
+    free(query2);
     sqlite3_finalize(stmt);
 }
