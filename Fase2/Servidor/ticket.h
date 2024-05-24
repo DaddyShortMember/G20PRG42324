@@ -9,9 +9,9 @@
 
 typedef struct{
 	int id;
-    int usid;
-    int tripid;
-	char date[30];
+    	int usid;
+   	int tripid;
+	char date[13];
 }Ticket; //X Bytes, malloc necesario para arrays
 
 Ticket getTicket(sqlite3 *db, int id);
