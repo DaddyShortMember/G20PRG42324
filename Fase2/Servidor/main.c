@@ -151,8 +151,8 @@ int main(void)
 			if(xx != 1)
 				aut = -1;
 			else{
-				Usuario usr = getUser(db,mil);
-				aut = usr.auth;
+				Usuario user = getUser(db,mil);
+				aut = user.auth;
 			}
 			sprintf(sendBuff, "%d", aut);
 			send(comm_socket, sendBuff, sizeof(sendBuff), 0);
@@ -161,24 +161,68 @@ int main(void)
 			free(pss);
 		}
 
-		if (strcmp(recvBuff, "TRIPS") == 0)
+		if (strcmp(recvBuff, "REGISTER") == 0)
+		{
+			int flg = 0;
+			int aut = 3;
+			int xx = 0;
+			recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
+			while (strcmp(recvBuff, "REGISTER-END") != 0 && flg >= 0)
+			{
+				if(flg == 0){
+					mil = malloc(sizeof(char)*30);
+					strcpy(mil,recvBuff);
+					flg++;
+				}
+				if(flg == 1){
+					pss = malloc(sizeof(char)*30);
+					strcpy(pss,recvBuff);
+					flg++;
+				}
+				if(flg == 2){
+					usr = malloc(sizeof(char)*30);
+					strcpy(pss,recvBuff);
+					flg++;
+				}
+				int n = exists(db,mil);
+				if(n == 1)
+					flg = -1;
+				recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
+			}
+			Usuario us = creaUsuario(usr,mil,pss,aut);
+			anyadirUsuario(db,us);
+			sprintf(sendBuff, "%d", aut);
+			send(comm_socket, sendBuff, sizeof(sendBuff), 0);
+			printf("Response sent: %s \n", sendBuff);
+			free(mil);
+			free(pss);
+			free(usr);
+		}
+
+		if (strcmp(recvBuff, "TICKETS") == 0)
 		{
 			recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
-			int n = atoi(recvBuff);
-			float raiz = sqrt(n);
+			if (strcmp(recvBuff, "TICKETS-END") == 0); // Nada que hacer
 
-			recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
-			if (strcmp(recvBuff, "TRIPS-END") == 0); // Nada que hacer
-
-			sprintf(sendBuff, "%f", raiz);
+			strcpy(sendBuff, inet_ntoa(server.sin_addr));
 			send(comm_socket, sendBuff, sizeof(sendBuff), 0);
 			printf("Response sent: %s \n", sendBuff);
 		}
 
-		if (strcmp(recvBuff, "IP") == 0)
+		if (strcmp(recvBuff, "TICKET") == 0)
 		{
 			recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
-			if (strcmp(recvBuff, "IP-END") == 0); // Nada que hacer
+			if (strcmp(recvBuff, "TICKET-END") == 0); // Nada que hacer
+
+			strcpy(sendBuff, inet_ntoa(server.sin_addr));
+			send(comm_socket, sendBuff, sizeof(sendBuff), 0);
+			printf("Response sent: %s \n", sendBuff);
+		}
+
+		if (strcmp(recvBuff, "TRIPSEE") == 0)
+		{
+			recv(comm_socket, recvBuff, sizeof(recvBuff), 0);
+			if (strcmp(recvBuff, "TRIPSEE-END") == 0); // Nada que hacer
 
 			strcpy(sendBuff, inet_ntoa(server.sin_addr));
 			send(comm_socket, sendBuff, sizeof(sendBuff), 0);
