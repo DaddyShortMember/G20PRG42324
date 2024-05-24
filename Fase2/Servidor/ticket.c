@@ -1,5 +1,7 @@
 #include "ticket.h"
 
+#include "ticket.h"
+
 Ticket getTicket(sqlite3 *db, int id) {
     sqlite3_stmt *stmt;
     Ticket ticket;
